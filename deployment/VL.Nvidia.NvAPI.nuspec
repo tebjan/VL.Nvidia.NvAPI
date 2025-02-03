@@ -6,18 +6,18 @@
 
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>VL.NewLibrary.Template</id>
+    <id>VL.Nvidia.NvAPI</id>
     <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
     <version>0.0.1-alpha</version>
-    <title>VL.NewLibrary.Template</title>
+    <title>VL.Nvidia.NvAPI</title>
     <!-- Provide authors and projectUrl --> 
-    <authors></authors>
-    <projectUrl></projectUrl>
+    <authors>Tebjan Halm</authors>
+    <projectUrl>https://github.com/tebjan/VL.Nvidia.NvAPI</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Provide description and tags-->
-    <description></description>
-    <tags>VL</tags>
-    <license type="expression">LGPL-3.0-only</license>
+    <description>NvAPI functionality for talking to Nvidia GPUs in vvvv gamma.</description>
+    <tags>VL nvapi nvidia quadro sync</tags>
+    <license type="expression">MIT</license>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
   </metadata>
