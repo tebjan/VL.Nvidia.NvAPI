@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2024.6.7" />
+  <Patch Id="OAT0Fp3BkuKN9e0Ur4HSKC">
+    <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="DGZrWc5xluLN4ldYMPFjyo">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NejOl7l2BDRLIkoEODAyEX">
+        <Canvas Id="RLSIjwWM4sEO7KW0jTReEw" CanvasType="Group">
+          <Node Bounds="473,352,107,19" Id="LvGNJfPhDB5NxdioxvcOQK">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SwapGroupManager" />
+            </p:NodeReference>
+            <Pin Id="QVUvntgF5k7NZJ6NPKLLQs" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QgBbRJLAqqqMLqOwY17osl" Name="Update" Kind="ApplyPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
+        <Patch Id="DQB5YqbztmLP40WK37H4Hw" Name="Update" />
+        <ProcessDefinition Id="JkCirhBEyIAP0PqtADZ9n0">
+          <Fragment Id="Oq75cugAxPfMwJoYwHpq25" Patch="LAHP3rgEapxLtuzqYJvCJm" Enabled="true" />
+          <Fragment Id="JTLjAON7PWAOQbudbElSrs" Patch="DQB5YqbztmLP40WK37H4Hw" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="OJJJpu2cQjJN8QQhiRoG5P" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
+</Document>
