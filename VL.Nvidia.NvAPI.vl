@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" xmlns:r="reflection" Id="VbQL9BgEZSKMYKJKcV9RGv" LanguageVersion="2025.7.0-0078-gedfd4fed5f" Version="0.128">
   <NugetDependency Id="GWg9BGfhbYqP47Lut7Z7H8" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="Jr58cS8DB9RPIUD978QXlU">
@@ -253,8 +253,8 @@
               <ControlPoint Id="AA5zcctgGJ3MwN5ptIk6G8" Bounds="1754,344" Alignment="Top" />
             </Node>
             <ControlPoint Id="TcIfzhioi4wPTHtQWyowje" Bounds="1398,188" />
-            <Pad Id="KT2CSIHH6PFLx0QETreMQ8" Comment="" Bounds="1804,762,190,132" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="1554,958,132,19" Id="MS4C2W0pmcoPpRBGew5LPs">
+            <Pad Id="KT2CSIHH6PFLx0QETreMQ8" Comment="" Bounds="1862,769,190,132" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="1566,967,132,19" Id="MS4C2W0pmcoPpRBGew5LPs">
               <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.D3DApi" LastDependency="NvAPIWrapper.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="NvAPIWrapper" />
@@ -273,7 +273,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="O5lSyCKv8xLQVqvkEBlL2q" Comment="Blocking" Bounds="1654,822,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="O5lSyCKv8xLQVqvkEBlL2q" Comment="Blocking" Bounds="1663,865,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -281,7 +281,7 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="Gb9tiJQsRnVPsbd0Cw6mJY" Comment="Apply" Bounds="1677,886,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="Gb9tiJQsRnVPsbd0Cw6mJY" Comment="Apply" Bounds="1695,917,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -289,7 +289,7 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Node Bounds="1763,1141,121,19" Id="OaT0UFVhU7LQHwssBCLw9J">
+            <Node Bounds="1308,885,121,19" Id="OaT0UFVhU7LQHwssBCLw9J">
               <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.D3DApi" LastDependency="NvAPIWrapper.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="NvAPIWrapper" />
@@ -302,17 +302,17 @@
               <Pin Id="Upu3cyJH5X2QGuIIulsnip" Name="Barrier" Kind="InputPin" />
               <Pin Id="S6lv60fw3KIQJyJFljwI2w" Name="Apply" Kind="InputPin" />
             </Node>
-            <Pad Id="K8DhC1N7de9OKYGzyJDbSb" Comment="Group" Bounds="1787,928,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <Pad Id="K8DhC1N7de9OKYGzyJDbSb" Comment="Group" Bounds="1349,789,35,15" ShowValueBox="true" isIOBox="true" Value="1">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="GGYnTsE6dfgPle97YIo9Hc" Comment="Barrier" Bounds="1851,963,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <Pad Id="GGYnTsE6dfgPle97YIo9Hc" Comment="Barrier" Bounds="1413,824,35,15" ShowValueBox="true" isIOBox="true" Value="1">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="NBBNkvy1KAMLZ8d3Vk6rz2" Comment="Apply" Bounds="1952,1018,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="NBBNkvy1KAMLZ8d3Vk6rz2" Comment="Apply" Bounds="1514,879,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -365,7 +365,7 @@
             </Node>
             <Pad Id="MYBgmSGZl1KOx1w5Tah5dL" Comment="Max Groups" Bounds="1397,1259,35,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="KTivFQwhQBLPpdGxhld57S" Comment="Max Barriers" Bounds="1530,1263,35,15" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="KinwfXRyUnjOTMIjvJmIp8" Comment="Swap Barrier" Bounds="1260,1177,33,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="KinwfXRyUnjOTMIjvJmIp8" Comment="Swap Barrier" Bounds="1258,1250,33,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="GfjLRyb20tXMSA9tXSQZ0Y" Comment="Swap Group" Bounds="1130,1246,35,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="KmIhxiCCALONOCFkxZiKJG" Comment="Force" Bounds="1126,977,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -565,7 +565,7 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Node Bounds="1897,1137,145,80" Id="G7Co6Ww1N5zO7bFcEsf8j5">
+            <Node Bounds="2019,370,145,80" Id="G7Co6Ww1N5zO7bFcEsf8j5">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -577,7 +577,7 @@
               <Patch Id="RiY4tJDcsNCN1CCjoTPvXb" ManuallySortedPins="true">
                 <Patch Id="UvbEIrOxcUAO85Lk8Uqpis" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="HGKImiJdrwWLyrSJQWOkCg" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1909,1166,121,26" Id="Mcttu5Z8D8qLW4JX33LHtv">
+                <Node Bounds="2031,399,121,26" Id="Mcttu5Z8D8qLW4JX33LHtv">
                   <p:NodeReference LastCategoryFullName="VL.Stride.Games.GameWindowRenderer" LastDependency="VL.Stride.Runtime.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetPresentCallIntercept" />
@@ -588,7 +588,7 @@
                 </Node>
               </Patch>
             </Node>
-            <Pad Id="JLudYA3EGmkPK7yqEibzhX" Comment="Force" Bounds="1911,1074,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="JLudYA3EGmkPK7yqEibzhX" Comment="Force" Bounds="2033,307,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -720,7 +720,7 @@
                 <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
               </p:NodeReference>
               <Pin Id="F12jOZrDfy3MRr8UuTrFPe" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="IfdnyxUxlZOM8TnCNzB5Ep" Name="Bounds" Kind="InputPin" DefaultValue="1205, 197, 569, 331" IsHidden="true" />
+              <Pin Id="IfdnyxUxlZOM8TnCNzB5Ep" Name="Bounds" Kind="InputPin" DefaultValue="1204.6666, 196.66667, 568.6667, 330.66666" IsHidden="true" />
               <Pin Id="S900FSG4WulPEbtlZJdqpq" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="B6zwCAaLIBdMQ0VDyzPZL9" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="KCUlwsyAteyPM6WlqKvMaZ" Name="Save Bounds" Kind="InputPin" IsHidden="true" />

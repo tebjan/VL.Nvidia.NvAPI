@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2024.6.7" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0078-gedfd4fed5f" Version="0.128">
   <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="OAT0Fp3BkuKN9e0Ur4HSKC">
     <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
