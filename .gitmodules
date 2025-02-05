@@ -1,0 +1,4 @@
+[submodule "src/NvAPIWrapper"]
+	path = src/NvAPIWrapper
+	url = https://github.com/tebjan/NvAPIWrapper.git
+	branch = master

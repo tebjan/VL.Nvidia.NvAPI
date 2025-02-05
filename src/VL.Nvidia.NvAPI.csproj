@@ -9,11 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NvAPIWrapper\**" />
+    <EmbeddedResource Remove="NvAPIWrapper\**" />
+    <None Remove="NvAPIWrapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="VL.Core" Version="2024.6.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NvAPIWrapper\NvAPIWrapper\NvAPIWrapper.csproj" />
+    <ProjectReference Include="NvAPIWrapper\NvAPIWrapper\NvAPIWrapper.csproj" />
   </ItemGroup>
 
   <ItemGroup>
