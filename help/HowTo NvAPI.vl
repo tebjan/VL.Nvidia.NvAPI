@@ -15,14 +15,60 @@
       </p:NodeReference>
       <Patch Id="NejOl7l2BDRLIkoEODAyEX">
         <Canvas Id="RLSIjwWM4sEO7KW0jTReEw" CanvasType="Group">
-          <Node Bounds="473,352,107,19" Id="LvGNJfPhDB5NxdioxvcOQK">
+          <Node Bounds="497,679,165,19" Id="K5KoB3zRUcsPgxeYvEO7Qp">
             <p:NodeReference LastCategoryFullName="Nvidia.NvAPI" LastDependency="VL.Nvidia.NvAPI.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SwapGroupManager" />
+              <Choice Kind="ProcessAppFlag" Name="RenderWindowSwapGroup" />
             </p:NodeReference>
-            <Pin Id="QVUvntgF5k7NZJ6NPKLLQs" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="QgBbRJLAqqqMLqOwY17osl" Name="Update" Kind="ApplyPin" />
+            <Pin Id="Pv3WcXGWlQBLvpIbFgZYzq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SUERkScqiEfLZzkqRfDMJx" Name="Input" Kind="InputPin" />
+            <Pin Id="ATjj1RGtxxPN5efeXbUHNd" Name="Render View" Kind="InputPin" />
+            <Pin Id="QuZfgzQnINbOgVuK0u5iS8" Name="Title" Kind="InputPin" />
+            <Pin Id="PsUItfI59BFQCBKyTlvw1A" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="OqyeUa6gDHuMBBrhswCjtj" Name="Clear" Kind="InputPin" />
+            <Pin Id="DypxM0KllmFMlQGks9lJ7E" Name="Edit Mode" Kind="InputPin" />
+            <Pin Id="GJFW89Yoc2jQP9gkt86OSO" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="Vm44rRxf5XXNVkzIGT3uYt" Name="Enabled" Kind="InputPin" />
+            <Pin Id="NCQnEgrtqPzPTPM2jXuLZD" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="QKOmTkI9VloNZtmR6oULbj" Name="Output" Kind="OutputPin" />
+            <Pin Id="BA3hrYelFiDL8th7RSr1TA" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="AuxYeX0kcQzQZqzWGWeG7i" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="HdCofMj4GWnN0QXxeQmYYg" Name="Back Buffer" Kind="OutputPin" />
+            <Pin Id="RREm6hNDpWxMYKm1iDCO1A" Name="Depth Buffer" Kind="OutputPin" />
           </Node>
+          <Node Bounds="498,603,78,19" Id="QWfKEakcKc7MXs9DhOREFF">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="SyncScene.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SyncRenderer" />
+            </p:NodeReference>
+            <Pin Id="QV7j9yHd2ehPoTiLNsCUfP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PotfzwtabfZN5FuRYd24FT" Name="Frame Number" Kind="InputPin" />
+            <Pin Id="LkLuTI1vrUtPV68bNCjz9P" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="497,489,81,19" Id="OVdsf1vystwMDIvkrIRve0">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="FrameBased" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="FrameCounter" />
+            </p:NodeReference>
+            <Pin Id="OqhxuwcK0lKOkG7NRUinXv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="F4pfxsJ2UosPES5HOPwCms" Name="Count" Kind="ApplyPin" />
+            <Pin Id="GbZUmgN2JKZLLJ3k1AUG4S" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="MTk7KUHWJURL2j5tJboPOd" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SFs5Vq0cGyxPL74TRVIyzH" Comment="Count" Bounds="505,407,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BgFRnAunwGsOZbgl0dkzdn" Comment="Present Interval" Bounds="671,607,71,15" ShowValueBox="true" isIOBox="true" Value="Default">
+            <p:TypeAnnotation LastCategoryFullName="Stride.Graphics" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="TypeFlag" Name="PresentInterval" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
         <Patch Id="DQB5YqbztmLP40WK37H4Hw" Name="Update" />
@@ -30,8 +76,15 @@
           <Fragment Id="Oq75cugAxPfMwJoYwHpq25" Patch="LAHP3rgEapxLtuzqYJvCJm" Enabled="true" />
           <Fragment Id="JTLjAON7PWAOQbudbElSrs" Patch="DQB5YqbztmLP40WK37H4Hw" Enabled="true" />
         </ProcessDefinition>
+        <Link Id="D10II50leDkMB1FScwGYEV" Ids="MTk7KUHWJURL2j5tJboPOd,PotfzwtabfZN5FuRYd24FT" />
+        <Link Id="MHlNwFyBd1NLt0Nec4ZQYC" Ids="SFs5Vq0cGyxPL74TRVIyzH,F4pfxsJ2UosPES5HOPwCms" />
+        <Link Id="MEUyfbSnMLsNeD2bdMZNSm" Ids="LkLuTI1vrUtPV68bNCjz9P,SUERkScqiEfLZzkqRfDMJx" />
+        <Link Id="KjCVtgy0RDCLK6EUvTLPVB" Ids="BgFRnAunwGsOZbgl0dkzdn,NCQnEgrtqPzPTPM2jXuLZD" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="OJJJpu2cQjJN8QQhiRoG5P" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
+  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2024.6.7" />
+  <DocumentDependency Id="T6GpkYEkwxMNQJP8Rctxd7" Location="./SyncScene.vl" />
+  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2024.6.7" />
 </Document>
