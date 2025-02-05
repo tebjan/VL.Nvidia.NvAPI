@@ -127,7 +127,7 @@
               <ControlPoint Id="IKxfomw2NUqNDXQyvXFeJr" Bounds="814,362" Alignment="Top" />
               <ControlPoint Id="Swi5lT346FUOU7ZAdNqCAH" Bounds="1038,745" Alignment="Bottom" />
             </Node>
-            <Node Bounds="889,1023,154,86" Id="QqvYNHAKh0XOFN1NNvDXBz">
+            <Node Bounds="879,1070,154,86" Id="QqvYNHAKh0XOFN1NNvDXBz">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -135,7 +135,7 @@
               </p:NodeReference>
               <Patch Id="KjxKl8L95T7MnfkM8NWPQe" ManuallySortedPins="true">
                 <Patch Id="NsQQWh7OEv6M3yXccbwWlG" Name="Create" ManuallySortedPins="true" />
-                <Node Bounds="901,1058,130,19" Id="Pdns6hBYnUhQAt20tntlsW">
+                <Node Bounds="891,1105,130,19" Id="Pdns6hBYnUhQAt20tntlsW">
                   <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.D3DApi" LastDependency="NvAPIWrapper.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="NvAPIWrapper" />
@@ -151,7 +151,7 @@
               <Pin Id="NUY9HtYQtQUOvAyHS3bei3" Name="Force" Kind="InputPin" />
               <Pin Id="N189pq4M3LjNuM0qh4ZSA7" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="IBJGfWVhSC0NYzRMhDEheF" Name="Has Changed" Kind="OutputPin" />
-              <ControlPoint Id="BtpCLSGJ4ofLXgEqVIosbO" Bounds="905,1103" Alignment="Bottom" />
+              <ControlPoint Id="BtpCLSGJ4ofLXgEqVIosbO" Bounds="895,1150" Alignment="Bottom" />
             </Node>
             <Node Bounds="1381,375,231,253" Id="EU7wXXfUSkYOoDBFjHFCxk">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -256,7 +256,7 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Node Bounds="2027,949,121,19" Id="OaT0UFVhU7LQHwssBCLw9J">
+            <Node Bounds="1763,1141,121,19" Id="OaT0UFVhU7LQHwssBCLw9J">
               <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.D3DApi" LastDependency="NvAPIWrapper.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="NvAPIWrapper" />
@@ -269,17 +269,17 @@
               <Pin Id="Upu3cyJH5X2QGuIIulsnip" Name="Barrier" Kind="InputPin" />
               <Pin Id="S6lv60fw3KIQJyJFljwI2w" Name="Apply" Kind="InputPin" />
             </Node>
-            <Pad Id="K8DhC1N7de9OKYGzyJDbSb" Comment="Group" Bounds="2051,736,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <Pad Id="K8DhC1N7de9OKYGzyJDbSb" Comment="Group" Bounds="1787,928,35,15" ShowValueBox="true" isIOBox="true" Value="1">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="GGYnTsE6dfgPle97YIo9Hc" Comment="Barrier" Bounds="2115,771,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <Pad Id="GGYnTsE6dfgPle97YIo9Hc" Comment="Barrier" Bounds="1851,963,35,15" ShowValueBox="true" isIOBox="true" Value="1">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="NBBNkvy1KAMLZ8d3Vk6rz2" Comment="Apply" Bounds="2216,826,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="NBBNkvy1KAMLZ8d3Vk6rz2" Comment="Apply" Bounds="1952,1018,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -332,9 +332,9 @@
             </Node>
             <Pad Id="MYBgmSGZl1KOx1w5Tah5dL" Comment="Max Groups" Bounds="1399,1186,35,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="KTivFQwhQBLPpdGxhld57S" Comment="Max Barriers" Bounds="1532,1190,35,15" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="KinwfXRyUnjOTMIjvJmIp8" Comment="Swap Barrier" Bounds="1253,1173,33,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="KinwfXRyUnjOTMIjvJmIp8" Comment="Swap Barrier" Bounds="1260,1177,33,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="GfjLRyb20tXMSA9tXSQZ0Y" Comment="Swap Group" Bounds="1132,1173,35,15" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="KmIhxiCCALONOCFkxZiKJG" Comment="Force" Bounds="1145,1000,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="KmIhxiCCALONOCFkxZiKJG" Comment="Force" Bounds="1126,977,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -342,7 +342,7 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="BNR2dUWmrTXOMPRv8H4uFW" Comment="Force" Bounds="867,942,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="BNR2dUWmrTXOMPRv8H4uFW" Comment="Force" Bounds="857,989,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -350,7 +350,57 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="DaRkNHc6arfO6GYuPz8sfp" Comment="" Bounds="907,1151,35,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DaRkNHc6arfO6GYuPz8sfp" Comment="" Bounds="897,1198,83,15" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="661,1077,154,86" Id="BppwGtWqY1bM1udoLBLAbi">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Patch Id="A1YsMj03vqyMcVzuLe8k2n" ManuallySortedPins="true">
+                <Patch Id="LcVKMAXBthoQKwVBk05Bz8" Name="Create" ManuallySortedPins="true" />
+                <Node Bounds="673,1115,130,19" Id="MVKcvFfPgVhOJBwcDXfB3G">
+                  <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.D3DApi" LastDependency="NvAPIWrapper.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="NvAPIWrapper" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Native" />
+                    <CategoryReference Kind="AssemblyCategory" Name="D3DApi" />
+                    <Choice Kind="OperationCallFlag" Name="D3D1XResetFrameCount" />
+                  </p:NodeReference>
+                  <Pin Id="LOoTVAZmcsXMVp4YnXvKvY" Name="D 3d Device" Kind="InputPin" />
+                </Node>
+                <Patch Id="KPh1chsV69jNNUap8Vhi2X" Name="Then" />
+              </Patch>
+              <Pin Id="Rp7VCLlVRf7LmWXDDrDbax" Name="Force" Kind="InputPin" />
+              <Pin Id="NilNgtBim00QO1CP8eCmJE" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="C2qqG0cBdIrOXye97Hkufu" Name="Has Changed" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Ie5XPiQfbkdNuKfXvDwvor" Comment="Force" Bounds="645,993,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="881,1035,30,19" Id="NX2pp2qhk2NMnxhJDHPLcP">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="OR" />
+              </p:NodeReference>
+              <Pin Id="TqJ6UP8ZFx8NngDDJNH6Wr" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Jb3PQbSBWoONX8sB18hUtL" Name="Input 2" Kind="InputPin" />
+              <Pin Id="QzqAve4i3ACMorwYfWmown" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="MPv2kCAHkNIPT6TUtbTwae" Comment="" Bounds="970,994,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <Patch Id="ARtbzZixXNJPcxKcp5D5wZ" Name="Create" />
           <Patch Id="BJ8ljzGtJRzMmlC7Nc63iZ" Name="Update">
@@ -404,9 +454,13 @@
           <Link Id="TQviFMeZVx4L6h2SAqYoqx" Ids="QeuPxj7ss1LOJseCiJLSvC,S47fQUILzqsMzGCTMlXZLK" />
           <Link Id="QMF00bnmMmGMi7WKm9uwQk" Ids="S47fQUILzqsMzGCTMlXZLK,KinwfXRyUnjOTMIjvJmIp8" />
           <Link Id="UUzOUPuSUCFPSW1Tpu4kmM" Ids="KmIhxiCCALONOCFkxZiKJG,Dy1o3qXTJLoLwwzkTqrkdV" />
-          <Link Id="IJxlT7Em8q2QSRdyY54BrT" Ids="BNR2dUWmrTXOMPRv8H4uFW,NUY9HtYQtQUOvAyHS3bei3" />
+          <Link Id="IJxlT7Em8q2QSRdyY54BrT" Ids="BNR2dUWmrTXOMPRv8H4uFW,TqJ6UP8ZFx8NngDDJNH6Wr" />
           <Link Id="BdMGhCMSZbvOyC3ktBWEMk" Ids="GsdeLnWDYoVNeqwc7DSzng,BtpCLSGJ4ofLXgEqVIosbO" />
           <Link Id="U4l7NnnV1X4Olviz72NZZP" Ids="BtpCLSGJ4ofLXgEqVIosbO,DaRkNHc6arfO6GYuPz8sfp" />
+          <Link Id="Q65v9TYE14nMGVJXHqjSkJ" Ids="Ie5XPiQfbkdNuKfXvDwvor,Rp7VCLlVRf7LmWXDDrDbax" />
+          <Link Id="Glj5Nt7GCfgQBUhDW2waeQ" Ids="Swi5lT346FUOU7ZAdNqCAH,LOoTVAZmcsXMVp4YnXvKvY" />
+          <Link Id="MgQLwQWv9H4OujRAW3wLF9" Ids="QzqAve4i3ACMorwYfWmown,NUY9HtYQtQUOvAyHS3bei3" />
+          <Link Id="Q8qGVtUbgHHOam3GF85T8m" Ids="MPv2kCAHkNIPT6TUtbTwae,Jb3PQbSBWoONX8sB18hUtL" />
         </Patch>
       </Node>
       <!--
@@ -435,7 +489,7 @@
                 <Choice Kind="ProcessAppFlag" Name="RenderWindowNvAPI" />
               </p:NodeReference>
               <Pin Id="F12jOZrDfy3MRr8UuTrFPe" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="IfdnyxUxlZOM8TnCNzB5Ep" Name="Bounds" Kind="InputPin" DefaultValue="2560, 0, 2560, 1440" IsHidden="true" />
+              <Pin Id="IfdnyxUxlZOM8TnCNzB5Ep" Name="Bounds" Kind="InputPin" DefaultValue="1205, 197, 569, 331" IsHidden="true" />
               <Pin Id="S900FSG4WulPEbtlZJdqpq" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="B6zwCAaLIBdMQ0VDyzPZL9" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="KCUlwsyAteyPM6WlqKvMaZ" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -2147,5 +2201,5 @@
   <NugetDependency Id="GxqlRZPwuSmO2TfSXIPH0g" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
   <NugetDependency Id="H1mep4xNTdINASsv7ITzCp" Location="VL.Core" Version="2024.6.7" />
   <PlatformDependency Id="Or9Kox1rahdNoX59lkP9uY" Location="Stride.Games.dll" />
-  <DocumentDependency Id="CzEzPkVr9r4Ph9EqakndGM" Location="C:/Program Files/vvvv/vvvv_gamma_6.7/packs/VL.Stride.Runtime/VL.Stride.Engine.vl" IsFriend="true" />
+  <DocumentDependency Id="CzEzPkVr9r4Ph9EqakndGM" Location="../../../../../Program Files/vvvv/vvvv_gamma_6.7/packs/VL.Stride.Runtime/VL.Stride.Engine.vl" IsFriend="true" />
 </Document>
