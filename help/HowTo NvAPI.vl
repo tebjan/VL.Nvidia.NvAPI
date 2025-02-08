@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0078-gedfd4fed5f" Version="0.128">
-  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0087-g0a67edc9a6" Version="0.128">
+  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2025.7.0-0087-g0a67edc9a6" />
   <Patch Id="OAT0Fp3BkuKN9e0Ur4HSKC">
     <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,48 +15,38 @@
       </p:NodeReference>
       <Patch Id="NejOl7l2BDRLIkoEODAyEX">
         <Canvas Id="RLSIjwWM4sEO7KW0jTReEw" CanvasType="Group">
-          <Node Bounds="497,679,165,19" Id="K5KoB3zRUcsPgxeYvEO7Qp">
+          <Node Bounds="1154,615,510,19" Id="G7yP542ooX9QaORrsZEURs">
             <p:NodeReference LastCategoryFullName="Nvidia.NvAPI" LastDependency="VL.Nvidia.NvAPI.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RenderWindowSwapGroup" />
+              <Choice Kind="ProcessAppFlag" Name="QuadroSyncPresenter" />
             </p:NodeReference>
-            <Pin Id="Pv3WcXGWlQBLvpIbFgZYzq" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SUERkScqiEfLZzkqRfDMJx" Name="Input" Kind="InputPin" />
-            <Pin Id="ATjj1RGtxxPN5efeXbUHNd" Name="Render View" Kind="InputPin" />
-            <Pin Id="QuZfgzQnINbOgVuK0u5iS8" Name="Title" Kind="InputPin" />
-            <Pin Id="PsUItfI59BFQCBKyTlvw1A" Name="Clear Color" Kind="InputPin" />
-            <Pin Id="OqyeUa6gDHuMBBrhswCjtj" Name="Clear" Kind="InputPin" />
-            <Pin Id="DypxM0KllmFMlQGks9lJ7E" Name="Edit Mode" Kind="InputPin" />
-            <Pin Id="GJFW89Yoc2jQP9gkt86OSO" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
-            <Pin Id="Vm44rRxf5XXNVkzIGT3uYt" Name="Enabled" Kind="InputPin" />
-            <Pin Id="NCQnEgrtqPzPTPM2jXuLZD" Name="Present Interval" Kind="InputPin" />
-            <Pin Id="QKOmTkI9VloNZtmR6oULbj" Name="Output" Kind="OutputPin" />
-            <Pin Id="BA3hrYelFiDL8th7RSr1TA" Name="Client Bounds" Kind="OutputPin" />
-            <Pin Id="AuxYeX0kcQzQZqzWGWeG7i" Name="Input Source" Kind="OutputPin" />
-            <Pin Id="HdCofMj4GWnN0QXxeQmYYg" Name="Back Buffer" Kind="OutputPin" />
-            <Pin Id="RREm6hNDpWxMYKm1iDCO1A" Name="Depth Buffer" Kind="OutputPin" />
+            <Pin Id="IimDStAT6S0NelfNQuuW1w" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IMGFCMJhq8XLmhI4nB93a7" Name="Group" Kind="InputPin" />
+            <Pin Id="Oq7mGD8E6CoNrL9f8GIkC5" Name="Barrier" Kind="InputPin" />
+            <Pin Id="QnUV3VuwDuZPbz3BuYuwh0" Name="Bind Barrier" Kind="InputPin" />
+            <Pin Id="Va6zgcsRKH3O5mJZtAVvzx" Name="Release Barrier" Kind="InputPin" />
+            <Pin Id="OWv2bu0GcgGLAuE2ZGk0uc" Name="Join Group" Kind="InputPin" />
+            <Pin Id="UUFBbZIGS4HPEBjy9D4Xts" Name="Leave Group" Kind="InputPin" />
+            <Pin Id="V3MEdzoNvKrPuQ7KCypDyU" Name="Blocking" Kind="InputPin" />
+            <Pin Id="HomGNGfAKHBN4xX45XmmaQ" Name="Query Group and Barrier Status" Kind="InputPin" />
+            <Pin Id="ShSI444D9MCN8tN6zYejyB" Name="Sync Interval" Kind="InputPin" />
+            <Pin Id="H3e47GUJQEQL5qufsZS2KA" Name="Allow Tearing" Kind="InputPin" />
+            <Pin Id="Hoq5nmdzsUBNWIiLSOu6U5" Name="Enabled" Kind="InputPin" />
+            <Pin Id="L4X4CQVHghyMpyaSzcI8Sp" Name="Output" Kind="OutputPin" />
+            <Pin Id="LphUbuz0J4JL8oLz5X1Xk7" Name="Bind or Release Group To Barrier Success" Kind="OutputPin" />
+            <Pin Id="IqiAwchMzugO5335x4SN70" Name="Join or Leave Group Success" Kind="OutputPin" />
+            <Pin Id="LQVilyAHyfyP97SjWuz0mW" Name="Swap Group" Kind="OutputPin" />
+            <Pin Id="RlbbuypJ5aMNwOsqgOL9yv" Name="Swap Barrier" Kind="OutputPin" />
+            <Pin Id="BL5epU38615MwzKxXAeA4r" Name="Max Groups" Kind="OutputPin" />
+            <Pin Id="QsKVkb6UMIPLxD58q2qnMs" Name="Max Barriers" Kind="OutputPin" />
+            <Pin Id="Ml8b37yJHvKNInMRLKOdi2" Name="Query Success" Kind="OutputPin" />
           </Node>
-          <Node Bounds="498,603,78,19" Id="QWfKEakcKc7MXs9DhOREFF">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="SyncScene.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SyncRenderer" />
-            </p:NodeReference>
-            <Pin Id="QV7j9yHd2ehPoTiLNsCUfP" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PotfzwtabfZN5FuRYd24FT" Name="Frame Number" Kind="InputPin" />
-            <Pin Id="LkLuTI1vrUtPV68bNCjz9P" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="497,489,81,19" Id="OVdsf1vystwMDIvkrIRve0">
-            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="FrameBased" NeedsToBeDirectParent="true" />
-              <Choice Kind="ProcessAppFlag" Name="FrameCounter" />
-            </p:NodeReference>
-            <Pin Id="OqhxuwcK0lKOkG7NRUinXv" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="F4pfxsJ2UosPES5HOPwCms" Name="Count" Kind="ApplyPin" />
-            <Pin Id="GbZUmgN2JKZLLJ3k1AUG4S" Name="Reset" Kind="ApplyPin" />
-            <Pin Id="MTk7KUHWJURL2j5tJboPOd" Name="Value" Kind="OutputPin" />
-          </Node>
-          <Pad Id="SFs5Vq0cGyxPL74TRVIyzH" Comment="Count" Bounds="505,407,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="JSQtkz7uKPbOGmsWTt76bj" Comment="Sync Interval" Bounds="1560,499,71,15" ShowValueBox="true" isIOBox="true" Value="Immediate">
+            <p:TypeAnnotation LastCategoryFullName="Stride.Graphics" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="TypeFlag" Name="PresentInterval" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Vr3A3wuG1pRPOWtCe1NZlO" Comment="Enabled" Bounds="1661,579,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -64,10 +54,245 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BgFRnAunwGsOZbgl0dkzdn" Comment="Present Interval" Bounds="671,607,71,15" ShowValueBox="true" isIOBox="true" Value="Default">
+          <Pad Id="CyXQq2wQwNaNnXaSeeDQOk" Comment="Allow Tearing" Bounds="1610,541,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="473,295,61,19" Id="V5Es127Q4PcOZlf3ZZQXER">
+            <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MainLoop" />
+            </p:NodeReference>
+            <Pin Id="AWaaloUq5qBN5uSVIomnkO" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="J8lwkPqzz3AO4S3fyhiG2A" Name="Input" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RVJQZ0hpqMuP7vZBLXpDSi" Name="Max FPS" Kind="InputPin" />
+            <Pin Id="Ep4dqWOxHv0Ny0En7mZCid" Name="Is Incremental" Kind="InputPin" />
+            <Pin Id="CgtnEFGB32dN34XXL737FA" Name="Incremental FPS" Kind="InputPin" />
+            <Pin Id="E3x1xMHFAHQO1X3BcWCpRE" Name="Max FPS" Kind="OutputPin" />
+            <Pin Id="Cu2zCW5pqEcMNa2DTwryl5" Name="Is Incremental" Kind="OutputPin" />
+            <Pin Id="LJ9Y7DDeWaGLqR14tLHKpt" Name="Incremental FPS" Kind="OutputPin" />
+            <Pin Id="BgAqBmdwKWBOpjVKlChOTE" Name="Wait Accuracy" Kind="InputPin" IsHidden="true" />
+            <Pin Id="G4H9NJbbSrbQBkShD9jNZu" Name="Wait Accuracy" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="Vyo0Xs0tVUKP844elfx7Ls" Comment="Max FPS" Bounds="475,254,90,15" ShowValueBox="true" isIOBox="true" Value="60">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="141,307,135,19" Id="B0afsqmQ565Oxgt040p6sR">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="QuadroSyncFrameCounter" />
+            </p:NodeReference>
+            <Pin Id="FsjY6Mh8Xf5OUQa8OreA6b" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A6WdRKVYIEZNeJRSbEjJh4" Name="Frame Count" Kind="OutputPin" />
+            <Pin Id="GOjq4Gfu8TEOhFdLzOLRsZ" Name="Enabled" Kind="InputPin" />
+            <Pin Id="N4q1LGaLqHgNIxiJsohEvE" Name="Reset" Kind="InputPin" />
+            <Pin Id="FuGQaTv5zNMNQy3KzBbj2n" Name="Success" Kind="OutputPin" />
+            <Pin Id="SO4NssHYnc4OXT73VHOwNy" Name="Reset Success" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FB2SyCaCLJWN5kgzRHyC3x" Comment="Enabled" Bounds="143,243,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QWsYgFHpQvZOFKGTpOLNvR" Comment="Reset" Bounds="273,242,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BJFeYy9XGJmLMcCQKJorRA" Comment="Frame Count" Bounds="143,452,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CSdIxdUkAGVNw89p7ReIB1" Comment="Is Incremental" Bounds="647,253,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SQr4lBHD3pHLH3BTfQaRqE" Comment="Success" Bounds="208,379,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Q9uV6gsKYi8LHYR8zpihES" Comment="Reset Success" Bounds="273,339,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Q1CGdaT2XBoNm3T9y5QSaZ" Comment="Bind Barrier" Bounds="1257,415,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PH2IXqePgsyPZ83SpsGrnP" Comment="Group" Bounds="1156,544,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SWrSolxB4pUMPKImvLzZCu" Comment="Barrier" Bounds="1206,583,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KbNsjA6U7XEOgn2NzlcTSI" Comment="Release Barrier" Bounds="1308,467,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CiEmLeT7gi7Ol1KHaCDg1A" Comment="Join Group" Bounds="1358,514,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K8SMsXyng88P6b84sP9tmz" Comment="Leave Group" Bounds="1408,549,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="M0JjBGnxKdwMmysgfN1G92" Comment="Query Group and Barrier Status" Bounds="1510,449,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TrYN2mhKRYxPz63Gugfejb" Comment="Query Success" Bounds="1661,665,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MIld1zxXIaePvoLxZrdxYf" Comment="Bind or Release Group To Barrier Success" Bounds="1228,808,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JI7qhk5C0h0Lq4468yCOlZ" Comment="Join or Leave Group Success" Bounds="1300,753,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OXNdqtsJWpuNpKpXCH6d0U" Comment="Swap Group" Bounds="1372,696,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="COoNxV2CrEtO3SCC8R51Dk" Comment="Swap Barrier" Bounds="1445,720,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NE6LD9gxyWaNnjI6GLVOpX" Comment="Max Groups" Bounds="1517,671,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JKKo20CiyaeLGFcjK4ODhp" Comment="Max Barriers" Bounds="1589,716,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Hq8mUAolR8pNvhkNvFNvWp" Comment="Blocking" Bounds="1459,577,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="141,674,185,19" Id="ShfSyhdiS9SMc6rS3SmWOW">
+            <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
+            </p:NodeReference>
+            <Pin Id="Kc0HuucokUdLBkTuWxHiA6" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BhSxIal8nYuO31Gfcl8LWD" Name="Bounds" Kind="InputPin" DefaultValue="1000, 40, 786, 432" IsHidden="true" />
+            <Pin Id="Dz5JQZRH4hxOzQNJlfIpN2" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FIE837luBdBQN9w80V4At7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JfVx481wub7L5knbXwoeYV" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DxKZAg9L9FeN76yn9wsuN4" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IVOz0t0U5gnLewLHYfzPxD" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HH2AJQUrasVOZwQKv9GGwk" Name="Multisample Count" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KHVujmFwJeNPTThho9Kgue" Name="Input" Kind="InputPin" />
+            <Pin Id="Uxp8MJ6GLTxNRoPTPDCroW" Name="Render View" Kind="InputPin" />
+            <Pin Id="NAP5OnaCrQSMAEk3cWU6bb" Name="Title" Kind="InputPin" />
+            <Pin Id="V8nBPBTmgCxMMFGpgqeueM" Name="Clear Flags" Kind="InputPin" IsHidden="true" />
+            <Pin Id="O2PdgJebDLvMtHTowY3lpi" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="GqPNtONCgdJLxyBQSPvUPx" Name="Clear Depth" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Nqd3f9aEtzZOzGwsikJS4y" Name="Clear Stencil" Kind="InputPin" IsHidden="true" />
+            <Pin Id="G9bpE07UsOpOAWex7D94S0" Name="Clear" Kind="InputPin" />
+            <Pin Id="SdS6xUqfEwvQMdNjOf2qXy" Name="Edit Mode" Kind="InputPin" />
+            <Pin Id="VRddbAuGs8hLe1PcZh0nf7" Name="Commands" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HeVDyjmAGNCOPYB7UZ30In" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="QquDYtJqQMCNPstQwjpw6k" Name="Enabled" Kind="InputPin" />
+            <Pin Id="IukK55pO7VJMF8fye8E1O9" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="JtoSG2hPdi8PqrjoTLibkw" Name="Output" Kind="OutputPin" />
+            <Pin Id="SJHYt5GviLSOcokBbrklVK" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="QoYbBapv0DlNJ3RvgJwljE" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="LgzHj4GG61gL97YwtKdpWr" Name="Back Buffer" Kind="OutputPin" />
+            <Pin Id="RiMvetDMvFtPaTKQtuFfYX" Name="Depth Buffer" Kind="OutputPin" />
+            <Pin Id="VSIUchY07K0NR1jQNNlDKG" Name="Present Call Intercept" Kind="InputPin" />
+          </Node>
+          <Node Bounds="141,518,78,19" Id="AsEeDIq4tIGNshzANd0vBE">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="SyncScene.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SyncRenderer" />
+            </p:NodeReference>
+            <Pin Id="VMkOBGdL3vSOvNzZFHLW2v" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AihI4Le5hhMPtsCmFgTtNp" Name="Frame Number" Kind="InputPin" />
+            <Pin Id="L0YgAOnGELPLUn0uTCaHd4" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="321,630,334,19" Id="CXFzQnFUOPfMhCNmCfxwvb">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="QuadroSync" />
+            </p:NodeReference>
+            <Pin Id="A1dgrKwlivELcydXH0uoGP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RhlV1QHgV87NVarWSmyJzj" Name="Join Group" Kind="InputPin" />
+            <Pin Id="PI9snqITkJiLQjd3VkKXFo" Name="Leave Group" Kind="InputPin" />
+            <Pin Id="MEVeJz9WP58Poh4msOpPHR" Name="Blocking" Kind="InputPin" />
+            <Pin Id="PF9MLdRWkuNMoT4050PEhm" Name="Sync Interval" Kind="InputPin" />
+            <Pin Id="L0UPWqhLG4vMPKONY5qsbs" Name="Allow Tearing" Kind="InputPin" />
+            <Pin Id="Hv34WRJTf7lQbqxzbl2XyF" Name="Enabled" Kind="InputPin" />
+            <Pin Id="SVj9210Nom9PmMhwivSnaj" Name="Output" Kind="OutputPin" />
+            <Pin Id="HivLWDkMqlvP5cpsbeJB9S" Name="Join or Leave Group Success" Kind="OutputPin" />
+            <Pin Id="S9ZLrIQtMiAM6NFNGsul9a" Name="Swap Group" Kind="OutputPin" />
+            <Pin Id="JHga5VDCL3KNh5GkkfRYMe" Name="Swap Barrier" Kind="OutputPin" />
+          </Node>
+          <Pad Id="S5RjGF2dNRgLbgbZErW4sF" Comment="Sync Interval" Bounds="520,539,71,15" ShowValueBox="true" isIOBox="true" Value="Default">
             <p:TypeAnnotation LastCategoryFullName="Stride.Graphics" LastDependency="VL.Nvidia.NvAPI.vl">
               <Choice Kind="TypeFlag" Name="PresentInterval" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PUw0hrblv2VPeaidlcf68s" Comment="Enabled" Bounds="652,595,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BVFhqRj4DQSMLAFFuy2CgY" Comment="Allow Tearing" Bounds="586,568,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FFH2ncqb0F1Miqe9kaDX4j" Comment="Join Group" Bounds="323,459,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Fdhlggs0E8SQLanWOheRgx" Comment="Leave Group" Bounds="389,490,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="If31N2MRFD8N7q2exHRUzi" Comment="Join or Leave Group Success" Bounds="433,725,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TOhgIPmACHTME9fHimOCHd" Comment="Swap Group" Bounds="542,693,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QAPXtxcb0guQCSRoOyOoRZ" Comment="Swap Barrier" Bounds="652,666,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PYsJ2wLQPYSOIOUsIMcJGj" Comment="Blocking" Bounds="455,514,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
@@ -76,15 +301,48 @@
           <Fragment Id="Oq75cugAxPfMwJoYwHpq25" Patch="LAHP3rgEapxLtuzqYJvCJm" Enabled="true" />
           <Fragment Id="JTLjAON7PWAOQbudbElSrs" Patch="DQB5YqbztmLP40WK37H4Hw" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="D10II50leDkMB1FScwGYEV" Ids="MTk7KUHWJURL2j5tJboPOd,PotfzwtabfZN5FuRYd24FT" />
-        <Link Id="MHlNwFyBd1NLt0Nec4ZQYC" Ids="SFs5Vq0cGyxPL74TRVIyzH,F4pfxsJ2UosPES5HOPwCms" />
-        <Link Id="MEUyfbSnMLsNeD2bdMZNSm" Ids="LkLuTI1vrUtPV68bNCjz9P,SUERkScqiEfLZzkqRfDMJx" />
-        <Link Id="KjCVtgy0RDCLK6EUvTLPVB" Ids="BgFRnAunwGsOZbgl0dkzdn,NCQnEgrtqPzPTPM2jXuLZD" />
+        <Link Id="LKgBzLn6V7sMi7OWzrLUVO" Ids="JSQtkz7uKPbOGmsWTt76bj,ShSI444D9MCN8tN6zYejyB" />
+        <Link Id="VWuh0VROwhCOvtTnuzKu3a" Ids="Vr3A3wuG1pRPOWtCe1NZlO,Hoq5nmdzsUBNWIiLSOu6U5" />
+        <Link Id="MjXiWqs9M5rNL8uyjeofuR" Ids="CyXQq2wQwNaNnXaSeeDQOk,H3e47GUJQEQL5qufsZS2KA" />
+        <Link Id="RBvZj7h4tzOL7tVSHQGvqB" Ids="Vyo0Xs0tVUKP844elfx7Ls,RVJQZ0hpqMuP7vZBLXpDSi" />
+        <Link Id="PuSdmUYT2lNNoxbG5KLmUj" Ids="FB2SyCaCLJWN5kgzRHyC3x,GOjq4Gfu8TEOhFdLzOLRsZ" />
+        <Link Id="JboA3SUh0TlLKWw09EtI7E" Ids="QWsYgFHpQvZOFKGTpOLNvR,N4q1LGaLqHgNIxiJsohEvE" />
+        <Link Id="NO0ozzk1KqAOEtEUlRYamy" Ids="A6WdRKVYIEZNeJRSbEjJh4,BJFeYy9XGJmLMcCQKJorRA" />
+        <Link Id="JDqVzCBGPuHNmQV7Xu1ijs" Ids="CSdIxdUkAGVNw89p7ReIB1,Ep4dqWOxHv0Ny0En7mZCid" />
+        <Link Id="HG67j5WU0KmPq7ohVXATU2" Ids="FuGQaTv5zNMNQy3KzBbj2n,SQr4lBHD3pHLH3BTfQaRqE" />
+        <Link Id="NOmZrpDjVoEPF5HolzCzse" Ids="SO4NssHYnc4OXT73VHOwNy,Q9uV6gsKYi8LHYR8zpihES" />
+        <Link Id="Q4Saizk5slONcwakWOQT3n" Ids="Q1CGdaT2XBoNm3T9y5QSaZ,QnUV3VuwDuZPbz3BuYuwh0" />
+        <Link Id="JYEcqfae3M5LaPG9gBYC0z" Ids="PH2IXqePgsyPZ83SpsGrnP,IMGFCMJhq8XLmhI4nB93a7" />
+        <Link Id="J5Q8sGInBwhL0aWTlkZOjP" Ids="SWrSolxB4pUMPKImvLzZCu,Oq7mGD8E6CoNrL9f8GIkC5" />
+        <Link Id="LWedfrp2CKZOY189HzOUrc" Ids="KbNsjA6U7XEOgn2NzlcTSI,Va6zgcsRKH3O5mJZtAVvzx" />
+        <Link Id="Jx4qNMqsKlkP99FWpB3T3o" Ids="CiEmLeT7gi7Ol1KHaCDg1A,OWv2bu0GcgGLAuE2ZGk0uc" />
+        <Link Id="OlOfQSm8TJUNBhEn8JSKyx" Ids="K8SMsXyng88P6b84sP9tmz,UUFBbZIGS4HPEBjy9D4Xts" />
+        <Link Id="EB6kYapDpaePv4MMAOQQeE" Ids="M0JjBGnxKdwMmysgfN1G92,HomGNGfAKHBN4xX45XmmaQ" />
+        <Link Id="RpvK4i16PDTLtLLKZ8d6WU" Ids="Ml8b37yJHvKNInMRLKOdi2,TrYN2mhKRYxPz63Gugfejb" />
+        <Link Id="VacwWbhukYoMyDkq00030q" Ids="LphUbuz0J4JL8oLz5X1Xk7,MIld1zxXIaePvoLxZrdxYf" />
+        <Link Id="MM9GIA4Xax7PAPnPbnVgxD" Ids="IqiAwchMzugO5335x4SN70,JI7qhk5C0h0Lq4468yCOlZ" />
+        <Link Id="AhhlJTrcuBoOLyA7T4bb1b" Ids="LQVilyAHyfyP97SjWuz0mW,OXNdqtsJWpuNpKpXCH6d0U" />
+        <Link Id="I6NEqlaQ1nDPfcnH7DUzwA" Ids="RlbbuypJ5aMNwOsqgOL9yv,COoNxV2CrEtO3SCC8R51Dk" />
+        <Link Id="Rlpbt3wLmArO4TRSihggAu" Ids="BL5epU38615MwzKxXAeA4r,NE6LD9gxyWaNnjI6GLVOpX" />
+        <Link Id="MWfSdCOCxC6ML7YgKIiYyT" Ids="QsKVkb6UMIPLxD58q2qnMs,JKKo20CiyaeLGFcjK4ODhp" />
+        <Link Id="UbA7f6VtuffPznXfkHcRJS" Ids="Hq8mUAolR8pNvhkNvFNvWp,V3MEdzoNvKrPuQ7KCypDyU" />
+        <Link Id="ISqi3AaRLZvO22Hl1ooRbL" Ids="L0YgAOnGELPLUn0uTCaHd4,KHVujmFwJeNPTThho9Kgue" />
+        <Link Id="QoNZCnf0vEgMbUTcJUP4Hm" Ids="SVj9210Nom9PmMhwivSnaj,VSIUchY07K0NR1jQNNlDKG" />
+        <Link Id="MvyyNWhiZqxNYIoWBRWFFX" Ids="S5RjGF2dNRgLbgbZErW4sF,PF9MLdRWkuNMoT4050PEhm" />
+        <Link Id="L7rigyNccp4O86QrJjBJ6L" Ids="PUw0hrblv2VPeaidlcf68s,Hv34WRJTf7lQbqxzbl2XyF" />
+        <Link Id="J9Yg20oamYrPQU40ozqS6P" Ids="BVFhqRj4DQSMLAFFuy2CgY,L0UPWqhLG4vMPKONY5qsbs" />
+        <Link Id="TwcAjNLPMLdN24wsX692pY" Ids="FFH2ncqb0F1Miqe9kaDX4j,RhlV1QHgV87NVarWSmyJzj" />
+        <Link Id="SNbk8khoXnwOnboZ6r6e8i" Ids="Fdhlggs0E8SQLanWOheRgx,PI9snqITkJiLQjd3VkKXFo" />
+        <Link Id="MS8hNpEP6xWPArdPHsvwWv" Ids="HivLWDkMqlvP5cpsbeJB9S,If31N2MRFD8N7q2exHRUzi" />
+        <Link Id="E4HVjzMRBE3MFkq3nXGzCG" Ids="S9ZLrIQtMiAM6NFNGsul9a,TOhgIPmACHTME9fHimOCHd" />
+        <Link Id="PEbuhuAtX9JLftYCYacT7G" Ids="JHga5VDCL3KNh5GkkfRYMe,QAPXtxcb0guQCSRoOyOoRZ" />
+        <Link Id="HH0zGNGfNePNTTxqd5OLZ9" Ids="PYsJ2wLQPYSOIOUsIMcJGj,MEVeJz9WP58Poh4msOpPHR" />
+        <Link Id="Lx2xoHEy02VO0jy0gDTIVJ" Ids="BJFeYy9XGJmLMcCQKJorRA,AihI4Le5hhMPtsCmFgTtNp" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="OJJJpu2cQjJN8QQhiRoG5P" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
-  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2024.6.7" />
+  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2025.7.0-0087-g0a67edc9a6" />
   <DocumentDependency Id="T6GpkYEkwxMNQJP8Rctxd7" Location="./SyncScene.vl" />
-  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2025.7.0-0087-g0a67edc9a6" />
 </Document>
