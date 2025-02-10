@@ -193,7 +193,7 @@
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
             <Pin Id="Kc0HuucokUdLBkTuWxHiA6" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BhSxIal8nYuO31Gfcl8LWD" Name="Bounds" Kind="InputPin" DefaultValue="1017, 180, 786, 432" IsHidden="true" />
+            <Pin Id="BhSxIal8nYuO31Gfcl8LWD" Name="Bounds" Kind="InputPin" DefaultValue="1108, 52, 786, 432" IsHidden="true" />
             <Pin Id="Dz5JQZRH4hxOzQNJlfIpN2" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FIE837luBdBQN9w80V4At7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="JfVx481wub7L5knbXwoeYV" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -313,7 +313,7 @@
                 </p:NodeReference>
                 <Pin Id="KTJeIkBQoKuLSNkRJlGOlH" Name="Milliseconds Timeout" Kind="InputPin" />
               </Node>
-              <Pad Id="Lhy02C8jWIRMznGqaJhI4K" Comment="Milliseconds Timeout" Bounds="864,213,35,15" ShowValueBox="true" isIOBox="true" Value="3000">
+              <Pad Id="Lhy02C8jWIRMznGqaJhI4K" Comment="Milliseconds Timeout" Bounds="864,213,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
