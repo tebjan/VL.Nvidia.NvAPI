@@ -4783,7 +4783,6 @@
                 from this client is under the synchronization of presentBarrier.
             </summary>
             <param name="presentBarrierClient">An NvPresentBarrierClientHandle handle created by NvAPI_xxxx_CreatePresentBarrierClient.</param>
-            <param name="pParams">Parameters to join presentBarrier.</param>
             <exception cref="T:NvAPIWrapper.Native.Exceptions.NVIDIAApiException">Thrown if the operation failed.</exception>
         </member>
         <member name="M:NvAPIWrapper.Native.D3DApi.LeavePresentBarrier(NvAPIWrapper.Native.D3D.Structures.PresentBarrierClientHandle)">
