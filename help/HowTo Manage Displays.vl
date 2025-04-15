@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Riqrh3Mryh7ODWngZGLk2Q" LanguageVersion="2025.7.0-0310-gb23441fc56" Version="0.128">
+  <NugetDependency Id="MayYWyRFC2HLHttqMsQEn5" Location="VL.CoreLib" Version="2025.7.0-0310-gb23441fc56" />
+  <Patch Id="Vpn5sJ43mfBM0ieU6FnKs8">
+    <Canvas Id="MqQHcB0909APCjrTb3b1jJ" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RAt103JwppEOcAdyWh1JhG">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="ITrVn6fPkd7NF7XplcHFEv">
+        <Canvas Id="Lf3SawbhEpjNkqC9BSThyQ" CanvasType="Group">
+          <Node Bounds="367,170,70,19" Id="UhKLgVct2ZuNnQ7AUIU0N1">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.Display.Display" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetDisplays" />
+            </p:NodeReference>
+            <Pin Id="UfxvRMRnsCDPpNQRP0g0LB" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TN6OKXpQlhIPKAkKVV0pLT" Name="Output" Kind="OutputPin" />
+            <Pin Id="Quw4EjNpEpcQQ4CP5Pn2FJ" Name="Refresh" Kind="InputPin" />
+          </Node>
+          <Node Bounds="367,240,42,26" Id="IH5g6BHkOSIMKeBWICj8ml">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.Display.Display" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Display" />
+              <Choice Kind="OperationCallFlag" Name="Name" />
+            </p:NodeReference>
+            <Pin Id="OD7dLGQlcnPLGxjKYhUAyX" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Hn81eOJk0gKPJsRvkx6NvB" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="AVe9nGGgL2vM08KZwR9RHK" Name="Name" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="367,201,52,19" Id="RyY7SGickmKL7G2WYkCv37">
+            <p:NodeReference LastCategoryFullName="Collections.Interfaces.IReadOnlyList" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyList" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="Bkv9XTt3IZdNmwRFVrLjxT" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UUv1YWBE0wmNvIlyzrR2Qt" Name="Default Value" Kind="InputPin" />
+            <Pin Id="O21oznbJry2LiR17q8Pyhu" Name="Index" Kind="InputPin" />
+            <Pin Id="K0P2dFUMDoEMpPqXoaezoq" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JXfVDXDKqJzPCPXGkUzWip" Comment="Name" Bounds="406,301,117,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="615,170,87,19" Id="Aa822ONFgFjM7WJxiVbZ0T">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.GPU" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="GPU" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetLogicalGPUs" />
+            </p:NodeReference>
+            <Pin Id="T5JPIcATG0vLjJncC07qan" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NDZgRoRnBp3PhA7VF4a2nE" Name="Refresh" Kind="InputPin" />
+            <Pin Id="SvL0YTrW4LiMUEoQRKp7nz" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="392,420,100,19" Id="SmKaWLu7zJlMxS27tkqEEA">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.Display.PathInfo" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetDisplaysConfig" />
+            </p:NodeReference>
+            <Pin Id="Esmpagwl34FMlTQTfgJNNO" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HgaTAH6tVlgNZcGQnovJ5o" Name="Refresh" Kind="InputPin" />
+            <Pin Id="SUX5ffBfKXWMc0BA76vyKx" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="392,570,98,19" Id="KccraEYjJZwMlWiSP5KL0M">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.Display.PathInfo.PathInfo" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SetDisplaysConfig" />
+            </p:NodeReference>
+            <Pin Id="OCardgm4CklNNDlXZXFHat" Name="Path Infos" Kind="InputPin" />
+            <Pin Id="GfGGI47OaKzNTL9z8Z80VK" Name="Flags" Kind="InputPin" DefaultValue="ValidateOnly" />
+            <Pin Id="LkgJUrx04ouQIiuAcCeZBu" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="P4cx5D3erwZLp9VthfRfSl" Comment="Apply" Bounds="487,540,35,15" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="392,461,52,19" Id="Fn4iSZhFKT6Mz351NiWkgR">
+            <p:NodeReference LastCategoryFullName="Collections.Interfaces.IReadOnlyList" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyList" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="Gqzhbs7LdXlNIg6yE5hXWI" Name="Input" Kind="StateInputPin" />
+            <Pin Id="O0E93cXnhDNNRLdJkhse3J" Name="Default Value" Kind="InputPin" />
+            <Pin Id="UtWjTBgzzckPxpDbjQQntY" Name="Index" Kind="InputPin" />
+            <Pin Id="T5imQVPrqCsMTgyf8aaX9X" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="392,520,65,19" Id="UieFOLEthiRNBCR0weeF5X">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="FromValue" />
+            </p:NodeReference>
+            <Pin Id="PIZxiQqg9oCPkKOPEdEXVc" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AaiXMNWAXn8LgdjiVdYYx7" Name="Input" Kind="InputPin" />
+            <Pin Id="AehUy3oPs9nOw19L7uLr5c" Name="Force" Kind="InputPin" />
+            <Pin Id="MPr5c9rKpzGNu0BxxJeoso" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HSzJpzlLNXiN3zMGmD5E96" Comment="Refresh" Bounds="394,400,35,15" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Dpp9kjvXuFANx93cIrtMA4" Name="" Bounds="354,370,519,264" />
+          <Pad Id="RLej8lm1kluLvrXv6Vkoso" Bounds="587,495,183,113" ShowValueBox="true" isIOBox="true" Value="This should just take the first DisplayConfig available and re-apply it. But when doing so you'll see an NVAPI_INVALID_ARGUMENT error in the console.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="898,500,78,26" Id="Q5rnKs5v5TrNSU1mjv6yqt">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.Display.PathInfo.PathInfo" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="PathInfo" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="PathInfo" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="SetResolution" />
+            </p:NodeReference>
+            <Pin Id="JP8C885saRNMXjrCHk3xC6" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TvEFByZxSjCMFz5aSVwIgc" Name="Resolution" Kind="InputPin" />
+            <Pin Id="ANOj1clULhuMe8TUUypvCW" Name="Color Depth" Kind="InputPin" />
+            <Pin Id="NUSlSO9UhiQMobwQou0d5o" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="UpJjtKT6qXmPdRfdBpuXb4" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="BkwBZEgV0YLNvkpM509Bp0" Comment="Apply" Bounds="973,469,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CpYNiB9Qv7SQcAjLrklHAu" Comment="Resolution" Bounds="924,400,35,28" ShowValueBox="true" isIOBox="true" Value="1920, 1080">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Int2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="JhRaFy4kx6YOhq4kc47ZqY" Comment="Color Depth" Bounds="949,440,35,15" ShowValueBox="true" isIOBox="true" Value="32">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Overlay Id="CEyo9WO5MrcPE2cOdsTd9b" Name="" Bounds="887,370,342,277" />
+          <Pad Id="So6wm1j5xqMNOnl7sdq1Bg" Bounds="1067,440,142,119" ShowValueBox="true" isIOBox="true" Value="Here you can see that clicking apply mutates the upstream value, even though it's set as Immutable in the Forward">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="BVyROBNaiHqMTVPyXpJfl2" Name="Create" />
+        <Patch Id="CoU2piabapvLqDODgt3493" Name="Update" />
+        <ProcessDefinition Id="B6EkHLSo5yFO2ZOdyDkf0p">
+          <Fragment Id="IgpxPqtty2EPyF8nhsNa62" Patch="BVyROBNaiHqMTVPyXpJfl2" Enabled="true" />
+          <Fragment Id="LfZWt3hVQuUOrAS4p2G6za" Patch="CoU2piabapvLqDODgt3493" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="MF5NGdxBBLtORVIJXL05yI" Ids="TN6OKXpQlhIPKAkKVV0pLT,Bkv9XTt3IZdNmwRFVrLjxT" />
+        <Link Id="IFqHfwdvKfEPgiglOBePIb" Ids="K0P2dFUMDoEMpPqXoaezoq,OD7dLGQlcnPLGxjKYhUAyX" />
+        <Link Id="G4KLWftxcJ6PhPtlohvIBS" Ids="AVe9nGGgL2vM08KZwR9RHK,JXfVDXDKqJzPCPXGkUzWip" />
+        <Link Id="SEpMPJdoGQcMRRsBBqn2ox" Ids="P4cx5D3erwZLp9VthfRfSl,LkgJUrx04ouQIiuAcCeZBu" />
+        <Link Id="MLUQIOeJigoMc3UqxvRh1B" Ids="SUX5ffBfKXWMc0BA76vyKx,Gqzhbs7LdXlNIg6yE5hXWI" />
+        <Link Id="RQldJj0z2ivOiHQMFpTpHD" Ids="MPr5c9rKpzGNu0BxxJeoso,OCardgm4CklNNDlXZXFHat" />
+        <Link Id="KArGYd6UFYCNZnjTvTNEGX" Ids="HSzJpzlLNXiN3zMGmD5E96,HgaTAH6tVlgNZcGQnovJ5o" />
+        <Link Id="FBOl4ZJ0IgcLMC0zAggbG1" Ids="T5imQVPrqCsMTgyf8aaX9X,AaiXMNWAXn8LgdjiVdYYx7" />
+        <Link Id="ENkan2YtlntOmqeyjMziz6" Ids="BkwBZEgV0YLNvkpM509Bp0,UpJjtKT6qXmPdRfdBpuXb4" />
+        <Link Id="FefPBBod2A1NDXnhQT4dgO" Ids="T5imQVPrqCsMTgyf8aaX9X,JP8C885saRNMXjrCHk3xC6" />
+        <Link Id="FWccQNOyxw4O9C7STQBp36" Ids="CpYNiB9Qv7SQcAjLrklHAu,TvEFByZxSjCMFz5aSVwIgc" />
+        <Link Id="LiWqylzA1q1OHyOfuL5vKR" Ids="JhRaFy4kx6YOhq4kc47ZqY,ANOj1clULhuMe8TUUypvCW" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="TE9GfmU9jSKOxiuD8d7UEj" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
+</Document>
