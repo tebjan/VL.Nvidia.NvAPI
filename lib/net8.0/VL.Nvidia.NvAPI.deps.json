@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "VL.Nvidia.NvAPI/1.0.0": {
         "dependencies": {
-          "NvAPIWrapper.Net": "0.8.1.104",
+          "NvAPIWrapper.Net": "0.8.1.109",
           "VL.Core": "2024.6.7",
-          "NvAPIWrapper": "0.8.1.104"
+          "NvAPIWrapper": "0.8.1.110"
         },
         "runtime": {
           "VL.Nvidia.NvAPI.dll": {}
@@ -440,19 +440,19 @@
           }
         }
       },
-      "NvAPIWrapper.Net/0.8.1.104": {
+      "NvAPIWrapper.Net/0.8.1.109": {
         "runtime": {
           "NvAPIWrapper.dll": {
-            "assemblyVersion": "0.8.1.104",
-            "fileVersion": "0.8.1.104"
+            "assemblyVersion": "0.8.1.109",
+            "fileVersion": "0.8.1.110"
           }
         }
       },
-      "NvAPIWrapper/0.8.1.104": {
+      "NvAPIWrapper/0.8.1.110": {
         "runtime": {
           "NvAPIWrapper.dll": {
-            "assemblyVersion": "0.8.1.104",
-            "fileVersion": "0.8.1.104"
+            "assemblyVersion": "0.8.1.110",
+            "fileVersion": "0.8.1.110"
           }
         }
       }
@@ -814,12 +814,12 @@
       "path": "vl.core/2024.6.7",
       "hashPath": "vl.core.2024.6.7.nupkg.sha512"
     },
-    "NvAPIWrapper.Net/0.8.1.104": {
+    "NvAPIWrapper.Net/0.8.1.109": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "NvAPIWrapper/0.8.1.104": {
+    "NvAPIWrapper/0.8.1.110": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

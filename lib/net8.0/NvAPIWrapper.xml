@@ -4658,7 +4658,7 @@
         </member>
         <member name="T:NvAPIWrapper.Native.D3DApi">
             <summary>
-                Contains Stereo static functions
+                Contains D3D static functions
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "M:NvAPIWrapper.Native.D3DApi.D3D1XPresent(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32)" -->
@@ -16979,6 +16979,157 @@
         <member name="F:NvAPIWrapper.Native.GPU.UtilizationDomain.BusInterface">
             <summary>
                 Bus interface utilization domain
+            </summary>
+        </member>
+        <member name="T:NvAPIWrapper.Native.GSyncApi">
+            <summary>
+                Contains GSync static functions
+            </summary>
+        </member>
+        <member name="T:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType">
+            <summary>
+            Defines the physical connector type for a GPU.
+            Used in NV_GPU_CONNECTOR_DATA and other structures.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.VGA15Pin">
+            <summary>
+            VGA 15-pin connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVComposite">
+            <summary>
+            TV Composite connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVSVideo">
+            <summary>
+            TV S-Video connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVHDTVComponent">
+            <summary>
+            TV HDTV Component connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVSCART">
+            <summary>
+            TV SCART connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVCompositeSCARTOnEIAJ4120">
+            <summary>
+            TV Composite SCART on EIAJ4120 connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.TVHDTVEIAJ4120">
+            <summary>
+            TV HDTV EIAJ4120 connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.PCPodHDTVYPrPb">
+            <summary>
+            PC Pod HDTV YPrPb connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.PCPodSVideo">
+            <summary>
+            PC Pod S-Video connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.PCPodComposite">
+            <summary>
+            PC Pod Composite connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DVIITVSVideo">
+            <summary>
+            DVI-I TV S-Video connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DVIITVComposite">
+            <summary>
+            DVI-I TV Composite connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DVII">
+            <summary>
+            DVI-I connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DVID">
+            <summary>
+            DVI-D connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.ADC">
+            <summary>
+            ADC connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.LFHDVII1">
+            <summary>
+            LFH DVI-I (first) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.LFHDVII2">
+            <summary>
+            LFH DVI-I (second) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.SPWG">
+            <summary>
+            SPWG connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.OEM">
+            <summary>
+            OEM specific connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DisplayPortExternal">
+            <summary>
+            External DisplayPort connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DisplayPortInternal">
+            <summary>
+            Internal DisplayPort connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.DisplayPortMiniExternal">
+            <summary>
+            Mini DisplayPort (external) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.HDMIA">
+            <summary>
+            HDMI Type A connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.HDMICMini">
+            <summary>
+            HDMI Type C (Mini HDMI) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.LFHDisplayPort1">
+            <summary>
+            LFH DisplayPort (first) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.LFHDisplayPort2">
+            <summary>
+            LFH DisplayPort (second) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.VirtualWFD">
+            <summary>
+            Virtual Wireless Fidelity (Wi-Fi Display) connector.
+            </summary>
+        </member>
+        <member name="F:NvAPIWrapper.Native.GSync.Enums.GpuConnectorType.Unknown">
+            <summary>
+            Unknown connector type.
             </summary>
         </member>
         <member name="M:NvAPIWrapper.Native.Helpers.ExtensionMethods.Accepts(System.Delegate,System.Int32)">

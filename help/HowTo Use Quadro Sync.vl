@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0087-g0a67edc9a6" Version="0.128">
-  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2025.7.0-0087-g0a67edc9a6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0351-gb3f6445d75" Version="0.128">
+  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2025.7.0-0351-gb3f6445d75" />
   <Patch Id="OAT0Fp3BkuKN9e0Ur4HSKC">
-    <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -200,6 +200,7 @@
             <Pin Id="DxKZAg9L9FeN76yn9wsuN4" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="IVOz0t0U5gnLewLHYfzPxD" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="HH2AJQUrasVOZwQKv9GGwk" Name="Multisample Count" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LRCMgOjAVnVMLUnerjtx38" Name="Input Priority" Kind="InputPin" IsHidden="true" />
             <Pin Id="KHVujmFwJeNPTThho9Kgue" Name="Input" Kind="InputPin" />
             <Pin Id="Uxp8MJ6GLTxNRoPTPDCroW" Name="Render View" Kind="InputPin" />
             <Pin Id="NAP5OnaCrQSMAEk3cWU6bb" Name="Title" Kind="InputPin" />
@@ -391,6 +392,25 @@
               <Choice Kind="TypeFlag" Name="PresentInterval" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="782,20,78,19" Id="UUjOtDoOw0DP2lq6bWZOlS">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.GSync" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GSyncDevices" />
+            </p:NodeReference>
+            <Pin Id="JiKgJ3SW3r1NzUxnl69SXR" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FdAquXX9DpiL6ceBSIPnZe" Name="Refresh" Kind="InputPin" />
+            <Pin Id="NzZiJDzVYvfLooU3ySrkEq" Name="GSync Handles" Kind="OutputPin" />
+            <Pin Id="U8ELf3rcwiiN85gKcINmlr" Name="Count" Kind="OutputPin" />
+            <Pin Id="JlApLSZ9KWqQJG4vqRO3MF" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Q6vySBAqWw7M2csIZUbHjl" Comment="Refresh" Bounds="784,-70,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
         <Patch Id="DQB5YqbztmLP40WK37H4Hw" Name="Update" />
@@ -445,11 +465,12 @@
         <Link Id="B1mGyQhbVmKOtaq5ODS2NV" Ids="Hq8mUAolR8pNvhkNvFNvWp,MoHf7iDqvjrNjch0uA7QBN" />
         <Link Id="O3djkIfmi3yLtO6ouzQ6nA" Ids="LQVilyAHyfyP97SjWuz0mW,BwVBTs6S7fPP1jwChcYAny" />
         <Link Id="NSECgVBLeoHNlZiF9ZSyYg" Ids="PDlv573IDbfNzT0sdLwasc,IukK55pO7VJMF8fye8E1O9" />
+        <Link Id="IQxQ1JtUPf9OmNeQXtMo6x" Ids="Q6vySBAqWw7M2csIZUbHjl,FdAquXX9DpiL6ceBSIPnZe" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="OJJJpu2cQjJN8QQhiRoG5P" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
-  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2025.7.0-0087-g0a67edc9a6" />
+  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2025.7.0-0351-gb3f6445d75" />
   <DocumentDependency Id="T6GpkYEkwxMNQJP8Rctxd7" Location="./SyncScene.vl" />
-  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2025.7.0-0087-g0a67edc9a6" />
+  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2025.7.0-0351-gb3f6445d75" />
 </Document>
