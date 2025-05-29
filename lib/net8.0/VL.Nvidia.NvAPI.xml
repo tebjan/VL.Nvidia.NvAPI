@@ -4,5 +4,39 @@
         <name>VL.Nvidia.NvAPI</name>
     </assembly>
     <members>
+        <member name="T:NvApi.GSync.GSyncDevice">
+            <summary>
+            Represents a GSync device with its handle and essential capabilities.
+            An instance is only created if its capabilities can be successfully fetched.
+            Other parameters can be queried on demand.
+            </summary>
+        </member>
+        <member name="P:NvApi.GSync.GSyncDevice.Handle">
+            <summary>
+            Gets the native handle to the GSync device.
+            </summary>
+        </member>
+        <member name="P:NvApi.GSync.GSyncDevice.Capabilities">
+            <summary>
+            Gets the capabilities of the GSync device.
+            This is populated during successful creation of the instance.
+            </summary>
+        </member>
+        <member name="M:NvApi.GSync.GSyncDevice.TryCreate(System.IntPtr,NvApi.GSync.GSyncDevice@)">
+            <summary>
+            Attempts to create a GSyncDevice instance by fetching its essential capabilities.
+            </summary>
+            <param name="handle">The native handle to the GSync device.</param>
+            <param name="device">When this method returns, contains the created GSyncDevice
+            object if the capabilities were successfully fetched; otherwise, null.</param>
+            <returns>True if the GSyncDevice was successfully created; otherwise, false.</returns>
+        </member>
+        <member name="M:NvApi.GSync.GSyncUtils.EnumerateGSyncDevices">
+            <summary>
+            Enumerates GSync devices for which essential capabilities can be successfully retrieved.
+            </summary>
+            <returns>A list of valid GSyncDevice objects. If capability fetching fails for a device handle, it's omitted.</returns>
+            <exception cref="T:NvAPIWrapper.Native.Exceptions.NVIDIAApiException">Thrown if the initial enumeration of device handles itself fails (e.g., NVAPI not found).</exception>
+        </member>
     </members>
 </doc>
