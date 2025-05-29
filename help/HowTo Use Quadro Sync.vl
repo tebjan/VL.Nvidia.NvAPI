@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0351-gb3f6445d75" Version="0.128">
-  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2025.7.0-0351-gb3f6445d75" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EOlIDX3FEhQNrt1jlIhLYh" LanguageVersion="2025.7.0-0345-gedcbaa0710" Version="0.128">
+  <NugetDependency Id="EPSaf7tYTrjLVxcASVsaXT" Location="VL.CoreLib" Version="2025.7.0-0345-gedcbaa0710" />
   <Patch Id="OAT0Fp3BkuKN9e0Ur4HSKC">
     <Canvas Id="MDYIyf6MowvLqi3lnamLh6" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -193,7 +193,7 @@
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
             <Pin Id="Kc0HuucokUdLBkTuWxHiA6" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BhSxIal8nYuO31Gfcl8LWD" Name="Bounds" Kind="InputPin" DefaultValue="2836.6667, 172, 786, 432" IsHidden="true" />
+            <Pin Id="BhSxIal8nYuO31Gfcl8LWD" Name="Bounds" Kind="InputPin" DefaultValue="567, 384, 786, 432" IsHidden="true" />
             <Pin Id="Dz5JQZRH4hxOzQNJlfIpN2" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FIE837luBdBQN9w80V4At7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="JfVx481wub7L5knbXwoeYV" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -399,9 +399,9 @@
             </p:NodeReference>
             <Pin Id="JiKgJ3SW3r1NzUxnl69SXR" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FdAquXX9DpiL6ceBSIPnZe" Name="Refresh" Kind="InputPin" />
-            <Pin Id="NzZiJDzVYvfLooU3ySrkEq" Name="GSync Handles" Kind="OutputPin" />
-            <Pin Id="U8ELf3rcwiiN85gKcINmlr" Name="Count" Kind="OutputPin" />
+            <Pin Id="NAMsFCNCQJUOOIKTaUQ1BH" Name="GSync Devices" Kind="OutputPin" />
             <Pin Id="JlApLSZ9KWqQJG4vqRO3MF" Name="Success" Kind="OutputPin" />
+            <Pin Id="U5j8VV2tJjQL8A8yRM3CNL" Name="Error Message" Kind="OutputPin" />
           </Node>
           <Pad Id="Q6vySBAqWw7M2csIZUbHjl" Comment="Refresh" Bounds="784,-70,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -411,6 +411,29 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="692,141,110,19" Id="ArmFt0VjHXlPEWaVZSC5si">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.GSync" LastDependency="VL.Nvidia.NvAPI.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GSyncControlParams" />
+            </p:NodeReference>
+            <Pin Id="AtVZQYNDnixOp8aTOjDkxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ItvNZHxh3rfOfMJVfNMKA4" Name="Refresh" Kind="InputPin" />
+            <Pin Id="TYGRW2C5JGTPJ2krfOqQ5X" Name="Input" Kind="InputPin" />
+            <Pin Id="FQUkTiwQCZyOm0FVw73WoG" Name="Output" Kind="OutputPin" />
+            <Pin Id="BixAYnYd4oFPdRhRxyTLXK" Name="Success" Kind="OutputPin" />
+            <Pin Id="URcZC5fdIudQBYF88r2pvK" Name="Error Message" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="768,81,52,19" Id="AwtL6ySpMKQQQgM3pvk5Px">
+            <p:NodeReference LastCategoryFullName="Collections.Interfaces.IReadOnlyList" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyList" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="JpXEBA9eMYlMI1kHqjZSQP" Name="Input" Kind="StateInputPin" />
+            <Pin Id="AyB0bXJirydOkjTQM1IKcA" Name="Default Value" Kind="InputPin" />
+            <Pin Id="O76KVLW47LxMWu3MZcl2KV" Name="Index" Kind="InputPin" />
+            <Pin Id="PNIQh9mT5MQNhgM7Rmg6eH" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
         <Patch Id="DQB5YqbztmLP40WK37H4Hw" Name="Update" />
@@ -466,11 +489,13 @@
         <Link Id="O3djkIfmi3yLtO6ouzQ6nA" Ids="LQVilyAHyfyP97SjWuz0mW,BwVBTs6S7fPP1jwChcYAny" />
         <Link Id="NSECgVBLeoHNlZiF9ZSyYg" Ids="PDlv573IDbfNzT0sdLwasc,IukK55pO7VJMF8fye8E1O9" />
         <Link Id="IQxQ1JtUPf9OmNeQXtMo6x" Ids="Q6vySBAqWw7M2csIZUbHjl,FdAquXX9DpiL6ceBSIPnZe" />
+        <Link Id="RhtUKy6zoaTO8v2LS3y89o" Ids="NAMsFCNCQJUOOIKTaUQ1BH,JpXEBA9eMYlMI1kHqjZSQP" />
+        <Link Id="Ie55PfVwgroMJF9B6iuUUZ" Ids="PNIQh9mT5MQNhgM7Rmg6eH,TYGRW2C5JGTPJ2krfOqQ5X" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="OJJJpu2cQjJN8QQhiRoG5P" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
-  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2025.7.0-0351-gb3f6445d75" />
+  <NugetDependency Id="Mg9pqUQxF2iQKlKVorJeHd" Location="VL.Stride" Version="2025.7.0-0345-gedcbaa0710" />
   <DocumentDependency Id="T6GpkYEkwxMNQJP8Rctxd7" Location="./SyncScene.vl" />
-  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2025.7.0-0351-gb3f6445d75" />
+  <NugetDependency Id="DIvOtoU7gdePglFU3KCmos" Location="VL.Skia" Version="2025.7.0-0345-gedcbaa0710" />
 </Document>
