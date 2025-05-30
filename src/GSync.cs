@@ -4,6 +4,7 @@ using NvAPIWrapper.Native.Exceptions;
 using NvAPIWrapper.Native;
 using NvAPIWrapper.Native.GSync.Enums;
 using NvAPIWrapper.Native.GSync.Structures;
+using NvAPIWrapper.GPU;
 
 namespace NvApi.GSync;
 
@@ -77,13 +78,13 @@ public class GSyncDevice
         return statusParams;
     }
 
-    public GSyncBoardStatus GetBoardStatus()
+    public GSyncBoardStatus GetBoardStatus(PhysicalGPU physicalGPU)
     {
-        GSyncApi.GSyncGetSyncStatus(Handle, out var boardStatus);
+        GSyncApi.GSyncGetSyncStatus(Handle, physicalGPU.Handle.MemoryAddress, out var boardStatus);
         return boardStatus;
     }
 
-    public void GetTopology(out GSyncGpuV2[] gsyncGPUs, out GSyncDisplayV2[] gsyncDisplays)
+    public void GetTopology(out GSyncGpu[] gsyncGPUs, out GSyncDisplay[] gsyncDisplays)
     {
         GSyncApi.GSyncGetTopology(Handle, out gsyncGPUs, out gsyncDisplays);
     }

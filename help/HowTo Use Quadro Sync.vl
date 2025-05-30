@@ -299,7 +299,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="955,173,182,105" Id="HOk0TZlG30WPkcidN91onO">
+          <Node Bounds="993,250,182,105" Id="HOk0TZlG30WPkcidN91onO">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -311,21 +311,21 @@
             <Patch Id="JpGAvygHZbMOixrYqWZ1AV" ManuallySortedPins="true">
               <Patch Id="Rpl8EebhccrPMmSJneVBqj" Name="Create" ManuallySortedPins="true" />
               <Patch Id="VmVPztW57VTPg5nZ1PKbA3" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="969,239,72,19" Id="VmHi9Gcqdw8Nt0vMiRqUak">
+              <Node Bounds="1007,316,72,19" Id="VmHi9Gcqdw8Nt0vMiRqUak">
                 <p:NodeReference LastCategoryFullName="Control.Parallel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ThreadSleep" />
                 </p:NodeReference>
                 <Pin Id="KTJeIkBQoKuLSNkRJlGOlH" Name="Milliseconds Timeout" Kind="InputPin" />
               </Node>
-              <Pad Id="Lhy02C8jWIRMznGqaJhI4K" Comment="Milliseconds Timeout" Bounds="971,201,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
+              <Pad Id="Lhy02C8jWIRMznGqaJhI4K" Comment="Milliseconds Timeout" Bounds="1009,278,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
             </Patch>
           </Node>
-          <Node Bounds="1004,41,65,19" Id="SxeYUGPGOtuQOymjuyCLdh">
+          <Node Bounds="1007,119,65,19" Id="SxeYUGPGOtuQOymjuyCLdh">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Random" />
@@ -337,7 +337,7 @@
             <Pin Id="H9BzylXfmHgNrxuVuXtj6x" Name="Enabled" Kind="InputPin" />
             <Pin Id="PE8xls9IHmmLJLPHG97jFB" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1021,112,25,19" Id="AaJy0ocjI7wNnpqultge0v">
+          <Node Bounds="1024,190,25,19" Id="AaJy0ocjI7wNnpqultge0v">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="&gt;" />
@@ -346,7 +346,7 @@
             <Pin Id="KoNdjbw5FMvPcrGj37y30u" Name="Input 2" Kind="InputPin" />
             <Pin Id="Du5cZmsTFGSLUpySa4FpfF" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Izp2LUEd9LPPznZEKjylzg" Comment="" Bounds="1065,86,35,15" ShowValueBox="true" isIOBox="true" Value="0.995">
+          <Pad Id="Izp2LUEd9LPPznZEKjylzg" Comment="" Bounds="1068,164,35,15" ShowValueBox="true" isIOBox="true" Value="0.995">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -392,18 +392,19 @@
               <Choice Kind="TypeFlag" Name="PresentInterval" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="782,20,78,19" Id="UUjOtDoOw0DP2lq6bWZOlS">
+          <Node Bounds="637,-21,78,19" Id="UUjOtDoOw0DP2lq6bWZOlS">
             <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.GSync" LastDependency="VL.Nvidia.NvAPI.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GSyncDevices" />
             </p:NodeReference>
             <Pin Id="JiKgJ3SW3r1NzUxnl69SXR" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FdAquXX9DpiL6ceBSIPnZe" Name="Refresh" Kind="InputPin" />
+            <Pin Id="HaBTfbNm9LsNTCx3t41R66" Name="First Device" Kind="OutputPin" />
             <Pin Id="NAMsFCNCQJUOOIKTaUQ1BH" Name="GSync Devices" Kind="OutputPin" />
             <Pin Id="JlApLSZ9KWqQJG4vqRO3MF" Name="Success" Kind="OutputPin" />
             <Pin Id="U5j8VV2tJjQL8A8yRM3CNL" Name="Error Message" Kind="OutputPin" />
           </Node>
-          <Pad Id="Q6vySBAqWw7M2csIZUbHjl" Comment="Refresh" Bounds="784,-70,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="Q6vySBAqWw7M2csIZUbHjl" Comment="Refresh" Bounds="639,-111,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -417,23 +418,41 @@
               <Choice Kind="ProcessAppFlag" Name="GSyncControlParams" />
             </p:NodeReference>
             <Pin Id="AtVZQYNDnixOp8aTOjDkxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ItvNZHxh3rfOfMJVfNMKA4" Name="Refresh" Kind="InputPin" />
-            <Pin Id="TYGRW2C5JGTPJ2krfOqQ5X" Name="Input" Kind="InputPin" />
-            <Pin Id="FQUkTiwQCZyOm0FVw73WoG" Name="Output" Kind="OutputPin" />
+            <Pin Id="TYGRW2C5JGTPJ2krfOqQ5X" Name="GSync Device" Kind="InputPin" />
+            <Pin Id="OEkOPW8nUi7OTIxn8MKKuQ" Name="Is Timing In Sync" Kind="OutputPin" />
+            <Pin Id="EdXMiahyMeNNdvZ7H70rKW" Name="Is Sync Signal Available" Kind="OutputPin" />
+            <Pin Id="BnTuXESB0EkM1j1oUSALGO" Name="Is Stereo Synced To Master" Kind="OutputPin" />
             <Pin Id="BixAYnYd4oFPdRhRxyTLXK" Name="Success" Kind="OutputPin" />
             <Pin Id="URcZC5fdIudQBYF88r2pvK" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="IZi2iuf7rgANGoC0RgnQYc" Name="Physical GPU" Kind="InputPin" />
+            <Pin Id="ItvNZHxh3rfOfMJVfNMKA4" Name="Refresh" Kind="InputPin" />
           </Node>
-          <Node Bounds="768,81,52,19" Id="AwtL6ySpMKQQQgM3pvk5Px">
-            <p:NodeReference LastCategoryFullName="Collections.Interfaces.IReadOnlyList" LastDependency="VL.CoreLib.vl">
+          <Node Bounds="752,-29,76,19" Id="OUnh7DhQvEhOgVPH4PxTVq">
+            <p:NodeReference LastCategoryFullName="Nvidia.NvAPI.GSync" LastDependency="VL.Nvidia.NvAPI.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyList" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <Choice Kind="ProcessAppFlag" Name="PhysicalGPUs" />
             </p:NodeReference>
-            <Pin Id="JpXEBA9eMYlMI1kHqjZSQP" Name="Input" Kind="StateInputPin" />
-            <Pin Id="AyB0bXJirydOkjTQM1IKcA" Name="Default Value" Kind="InputPin" />
-            <Pin Id="O76KVLW47LxMWu3MZcl2KV" Name="Index" Kind="InputPin" />
-            <Pin Id="PNIQh9mT5MQNhgM7Rmg6eH" Name="Result" Kind="OutputPin" />
+            <Pin Id="PES2pPqVmV8MUB0O2Qm7kB" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FeBpHlNDlWMMWknTjtRcYF" Name="Refresh" Kind="InputPin" />
+            <Pin Id="FMdQ8PixK3PQSYywGvHVrr" Name="First Device" Kind="OutputPin" />
+            <Pin Id="Ama82EiUyACMqD6Q28yNYh" Name="GPU Devices" Kind="OutputPin" />
           </Node>
+          <Pad Id="J25MLYkEWMgPOvIyBYEd7F" Comment="Refresh" Bounds="762,-90,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TvsGVwndXuDQK6I8oHnJL5" Comment="Refresh" Bounds="857,90,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="LAHP3rgEapxLtuzqYJvCJm" Name="Create" />
         <Patch Id="DQB5YqbztmLP40WK37H4Hw" Name="Update" />
@@ -489,8 +508,10 @@
         <Link Id="O3djkIfmi3yLtO6ouzQ6nA" Ids="LQVilyAHyfyP97SjWuz0mW,BwVBTs6S7fPP1jwChcYAny" />
         <Link Id="NSECgVBLeoHNlZiF9ZSyYg" Ids="PDlv573IDbfNzT0sdLwasc,IukK55pO7VJMF8fye8E1O9" />
         <Link Id="IQxQ1JtUPf9OmNeQXtMo6x" Ids="Q6vySBAqWw7M2csIZUbHjl,FdAquXX9DpiL6ceBSIPnZe" />
-        <Link Id="RhtUKy6zoaTO8v2LS3y89o" Ids="NAMsFCNCQJUOOIKTaUQ1BH,JpXEBA9eMYlMI1kHqjZSQP" />
-        <Link Id="Ie55PfVwgroMJF9B6iuUUZ" Ids="PNIQh9mT5MQNhgM7Rmg6eH,TYGRW2C5JGTPJ2krfOqQ5X" />
+        <Link Id="UMuHJhsUeZDMJC98YRfzhu" Ids="J25MLYkEWMgPOvIyBYEd7F,FeBpHlNDlWMMWknTjtRcYF" />
+        <Link Id="Nuupgp2LDcTMSQ3RLmjKq1" Ids="TvsGVwndXuDQK6I8oHnJL5,ItvNZHxh3rfOfMJVfNMKA4" />
+        <Link Id="CxjNS5IopfHLzmtHyjI6t9" Ids="FMdQ8PixK3PQSYywGvHVrr,IZi2iuf7rgANGoC0RgnQYc" />
+        <Link Id="RI0HIRa9NpRQRZRZMFgNIo" Ids="HaBTfbNm9LsNTCx3t41R66,TYGRW2C5JGTPJ2krfOqQ5X" />
       </Patch>
     </Node>
   </Patch>
