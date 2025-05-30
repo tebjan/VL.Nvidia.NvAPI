@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VbQL9BgEZSKMYKJKcV9RGv" LanguageVersion="2025.7.0-0351-gb3f6445d75" Version="0.128">
-  <NugetDependency Id="GWg9BGfhbYqP47Lut7Z7H8" Location="VL.CoreLib" Version="2025.7.0-0351-gb3f6445d75" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VbQL9BgEZSKMYKJKcV9RGv" LanguageVersion="2025.7.0-0345-gedcbaa0710" Version="0.128">
+  <NugetDependency Id="GWg9BGfhbYqP47Lut7Z7H8" Location="VL.CoreLib" Version="2025.7.0-0345-gedcbaa0710" />
   <Patch Id="Jr58cS8DB9RPIUD978QXlU">
     <Canvas Id="EjuKHqJgiLBOPAb8qzMEGf" DefaultCategory="Nvidia.NvAPI" CanvasType="FullCategory">
       <Canvas Id="Al3LylHWMk7LdbpULFia6V" Name="QuadroSync" Position="144,370">
@@ -1509,7 +1509,7 @@
           </p:NodeReference>
           <Patch Id="R3CaN16RTZxMpCUaUI8HnM">
             <Canvas Id="KlETTJbkXiGOytZE4bhD2Z" CanvasType="Group">
-              <Node Bounds="405,232,191,126" Id="Loe6TiUC50eLxQy0Hb6GGj">
+              <Node Bounds="405,210,193,150" Id="Loe6TiUC50eLxQy0Hb6GGj">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1521,7 +1521,7 @@
                 <Patch Id="J75FSJqRMVMNaRzuOmq1Z3" ManuallySortedPins="true">
                   <Patch Id="MDPTZ2GXS7JNa2LHwDSQYd" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="V6QDA4IWOLVNPimwSjG0O9" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="436,252,148,86" Id="SvzDpNmlI05QC2UR7fyE8s">
+                  <Node Bounds="436,230,150,86" Id="SvzDpNmlI05QC2UR7fyE8s">
                     <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Control" />
@@ -1539,57 +1539,54 @@
                       <Patch Id="QqwxC85zLCiObLFy5KdeNi" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="Rcaiu6R4gJHOvYwXIRLR7r" Name="Update" ManuallySortedPins="true" />
                       <Patch Id="Kj93LCUymUlMGBsbW6UDI4" Name="Dispose" ManuallySortedPins="true" />
-                      <Node Bounds="448,290,124,19" Id="AYotI6yBqaBNzJNjaDH655">
-                        <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.GSyncApi" LastDependency="NvAPIWrapper.dll">
+                      <Node Bounds="448,260,126,19" Id="OYUaYc7KvfkLMAoHMSMH4g">
+                        <p:NodeReference LastCategoryFullName="NvApi.GSync.GSyncUtils" LastDependency="VL.Nvidia.NvAPI.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="GSyncEnumSyncDevices" />
+                          <CategoryReference Kind="ClassType" Name="GSyncUtils" />
+                          <Choice Kind="OperationCallFlag" Name="EnumerateGSyncDevices" />
                         </p:NodeReference>
-                        <Pin Id="Mncp03573lgPkLRH10iFvQ" Name="Nv GSync Handles" Kind="OutputPin" />
-                        <Pin Id="Ey0yaBF5R6LOQfIOmb7MBe" Name="Gsync Count" Kind="OutputPin" />
+                        <Pin Id="O4HIqsASshuLlH5ucs7w0L" Name="Result" Kind="OutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="AgyXz3VBq5nQDC0N7cZcNz" Bounds="450,332" Alignment="Bottom" />
-                    <ControlPoint Id="MLwFzjvxviCL8wm0AtYMqs" Bounds="569,332" Alignment="Bottom" />
+                    <ControlPoint Id="AgyXz3VBq5nQDC0N7cZcNz" Bounds="450,310" Alignment="Bottom" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="Li6ZFni2BxbLZY9rHoMYV9" Bounds="450,352" Alignment="Bottom" />
-                <ControlPoint Id="Riln7lZa0M1O3bmfQUbZpO" Bounds="569,352" Alignment="Bottom" />
-                <ControlPoint Id="GIaU3IgVA2eMEiYSkv62hd" Bounds="541,352" Alignment="Bottom" />
+                <ControlPoint Id="Li6ZFni2BxbLZY9rHoMYV9" Bounds="450,354" Alignment="Bottom" />
+                <ControlPoint Id="GIaU3IgVA2eMEiYSkv62hd" Bounds="541,354" Alignment="Bottom" />
+                <ControlPoint Id="NFNY0keaqlZNftHarwwOqm" Bounds="581,354" Alignment="Bottom" />
               </Node>
-              <ControlPoint Id="QkHREGvoaGBLczv4ySM8VY" Bounds="407,201" />
-              <ControlPoint Id="QzDtKRiiZYfL8U8WwXjORs" Bounds="450,380" />
-              <ControlPoint Id="M0Sfqk9oSxZQRNOPlmfp8i" Bounds="569,380" />
-              <ControlPoint Id="VY1dfxwODzyOaovZJ4eAmy" Bounds="634,380" />
+              <ControlPoint Id="QkHREGvoaGBLczv4ySM8VY" Bounds="407,191" />
+              <ControlPoint Id="QzDtKRiiZYfL8U8WwXjORs" Bounds="450,450" />
+              <ControlPoint Id="VY1dfxwODzyOaovZJ4eAmy" Bounds="541,450" />
+              <ControlPoint Id="H0yCA28r94jMEA1Zu5JD88" Bounds="609,450" />
             </Canvas>
             <Patch Id="KonYc8kCS22NQr9iKgeMa0" Name="Create" />
             <Patch Id="MLCYsN5bCVMMQQgfgsdvjT" Name="Update">
               <Pin Id="G0RJFbRU1n3QcITB6LGI6T" Name="Refresh" Kind="InputPin" />
-              <Pin Id="FMmJLCXikicOI1YIaGuktH" Name="GSync Handles" Kind="OutputPin" />
-              <Pin Id="R7hKOsPZ9drM21U8LzeYqv" Name="Count" Kind="OutputPin" />
+              <Pin Id="FMmJLCXikicOI1YIaGuktH" Name="GSync Devices" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="IReadOnlyList" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="ByuCIqdHMPcMSt0ErHTTYa" Name="Success" Kind="OutputPin" />
+              <Pin Id="IpEkXzp90OELSq3jyO7Ii9" Name="Error Message" Kind="OutputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="NLYXwTy9d74OXJxvitF5Ou">
               <Fragment Id="MyKpNGx0aSUOQCt76c0xFA" Patch="KonYc8kCS22NQr9iKgeMa0" Enabled="true" />
               <Fragment Id="H0lb0hzsGEMQHBGACyQS6t" Patch="MLCYsN5bCVMMQQgfgsdvjT" Enabled="true" />
             </ProcessDefinition>
             <Link Id="ASnxegzTbmTQNxAWTptGN3" Ids="QkHREGvoaGBLczv4ySM8VY,Dz74aU1TyDHQPO7g8SHzK0" />
             <Link Id="FFg3qODfaedOBlBqXckUlf" Ids="G0RJFbRU1n3QcITB6LGI6T,QkHREGvoaGBLczv4ySM8VY" IsHidden="true" />
-            <Link Id="Urc79c7dBZwLGeuwGKXoXb" Ids="Mncp03573lgPkLRH10iFvQ,AgyXz3VBq5nQDC0N7cZcNz" />
             <Link Id="IyJjeCyAxbdP7Uevy9m2ea" Ids="AgyXz3VBq5nQDC0N7cZcNz,Li6ZFni2BxbLZY9rHoMYV9" />
             <Link Id="Uo2ia5RFNTsPLowj6hiBNy" Ids="Li6ZFni2BxbLZY9rHoMYV9,QzDtKRiiZYfL8U8WwXjORs" />
             <Link Id="H3PaJErzsb7L7LB8UVgXPG" Ids="QzDtKRiiZYfL8U8WwXjORs,FMmJLCXikicOI1YIaGuktH" IsHidden="true" />
-            <Link Id="MZI9W9gO3WiM9BGpWIfGAe" Ids="Ey0yaBF5R6LOQfIOmb7MBe,MLwFzjvxviCL8wm0AtYMqs" />
-            <Link Id="IETnRQq0JFrPk86cwYSkSL" Ids="MLwFzjvxviCL8wm0AtYMqs,Riln7lZa0M1O3bmfQUbZpO" />
-            <Link Id="D7raPWdFP7UOwvrxJcQV8t" Ids="Riln7lZa0M1O3bmfQUbZpO,M0Sfqk9oSxZQRNOPlmfp8i" />
-            <Link Id="GLOfAQ8B4VZMsB7nR19OX9" Ids="M0Sfqk9oSxZQRNOPlmfp8i,R7hKOsPZ9drM21U8LzeYqv" IsHidden="true" />
             <Link Id="JHJDaC3Jn0kLdxo8pUwhiX" Ids="RnmOG0GoFMvNSWbny1JJ4Q,GIaU3IgVA2eMEiYSkv62hd" />
             <Link Id="Hv8uYR2dwJELuCzwrdQySr" Ids="GIaU3IgVA2eMEiYSkv62hd,VY1dfxwODzyOaovZJ4eAmy" />
             <Link Id="DIcnXJebi4CQLX1AL8QiIU" Ids="VY1dfxwODzyOaovZJ4eAmy,ByuCIqdHMPcMSt0ErHTTYa" IsHidden="true" />
+            <Link Id="AFRHcOHDxrJOUZIKfoyBTE" Ids="Qpmi11srsKjMsfZzjL2gFj,NFNY0keaqlZNftHarwwOqm" />
+            <Link Id="SVFRLjvyLcSQYkPTlWZI2B" Ids="NFNY0keaqlZNftHarwwOqm,H0yCA28r94jMEA1Zu5JD88" />
+            <Link Id="HAGjoxwAaGKQa9ZZslZ8hx" Ids="H0yCA28r94jMEA1Zu5JD88,IpEkXzp90OELSq3jyO7Ii9" IsHidden="true" />
+            <Link Id="JE9PUlV9km3PzZqfq0JhZD" Ids="O4HIqsASshuLlH5ucs7w0L,AgyXz3VBq5nQDC0N7cZcNz" />
           </Patch>
         </Node>
         <!--
@@ -1603,7 +1600,7 @@
           </p:NodeReference>
           <Patch Id="JUENNKFM2ITOxSLbjKKVti">
             <Canvas Id="Vq9uNzzWCYTMg8ovWaoH2I" CanvasType="Group">
-              <Node Bounds="405,232,210,144" Id="TceP6PAIHaHNa83H4q9jF3">
+              <Node Bounds="416,231,217,165" Id="TceP6PAIHaHNa83H4q9jF3">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1615,7 +1612,7 @@
                 <Patch Id="GwSCXILCUfUMRqO4pOr1Vf" ManuallySortedPins="true">
                   <Patch Id="NEQu6HutuOPMxWP9BtErlz" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="AAkwsjoKjkxLGHuWoatETh" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="436,252,167,86" Id="EyaOeyAMRZZPjg68PlLt8N">
+                  <Node Bounds="447,251,116,86" Id="EyaOeyAMRZZPjg68PlLt8N">
                     <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Control" />
@@ -1633,35 +1630,81 @@
                       <Patch Id="T6zmHzcLrYDNDRPbF1zXXf" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="Lk3qApKEfFuPjsb4qBp7Ag" Name="Update" ManuallySortedPins="true" />
                       <Patch Id="IautKkjZZMNPNMN3XUrGmK" Name="Dispose" ManuallySortedPins="true" />
-                      <Node Bounds="448,290,143,19" Id="ESCmQ3sw2dQQYDI7cIAT6Z">
-                        <p:NodeReference LastCategoryFullName="NvAPIWrapper.Native.GSyncApi" LastDependency="NvAPIWrapper.dll">
+                      <Node Bounds="459,280,86,26" Id="N838ihHket1P0SI8E14vwo">
+                        <p:NodeReference LastCategoryFullName="NvApi.GSync.GSyncDevice" LastDependency="VL.Nvidia.NvAPI.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="GSyncGetControlParameters" />
+                          <CategoryReference Kind="ClassType" Name="GSyncDevice" />
+                          <Choice Kind="OperationCallFlag" Name="GetBoardStatus" />
                         </p:NodeReference>
-                        <Pin Id="NLsdFEyNFZuPqD1StxUeem" Name="Gsync Controls" Kind="OutputPin" />
-                        <Pin Id="Lekc4kA9EK2MCHZzGUnsIb" Name="H Nv GSync Device" Kind="InputPin" />
+                        <Pin Id="FS9vMgCSwzhPBLtlwKNbyW" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="HOxDncIf72APHobU8s04kh" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="OXTFATpo2hBNKJwBn3Vddu" Name="Result" Kind="OutputPin" />
                       </Node>
                     </Patch>
+                    <ControlPoint Id="Gycxug7iH8GP48D7qqxhpN" Bounds="548,331" Alignment="Bottom" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="Ol805Ww00KsP6gLX3NvLXu" Bounds="585,370" Alignment="Bottom" />
-                <ControlPoint Id="EamU0BGJIZfLQWXYl5eAcL" Bounds="600,370" Alignment="Bottom" />
+                <ControlPoint Id="Ol805Ww00KsP6gLX3NvLXu" Bounds="579,390" Alignment="Bottom" />
+                <ControlPoint Id="EamU0BGJIZfLQWXYl5eAcL" Bounds="618,390" Alignment="Bottom" />
+                <ControlPoint Id="SxmWLdjy1wMNOe9OQqwgOh" Bounds="514,390" Alignment="Bottom" />
               </Node>
-              <ControlPoint Id="G3HEUKM1B3gMwzYf0b7Idr" Bounds="407,201" />
-              <ControlPoint Id="RquWxfU3Z5yNqEL6ZBy9ZD" Bounds="585,420" />
-              <ControlPoint Id="QKYsCW1cOkjMq4FnO7fi8s" Bounds="661,420" />
+              <ControlPoint Id="G3HEUKM1B3gMwzYf0b7Idr" Bounds="418,101" />
+              <ControlPoint Id="RquWxfU3Z5yNqEL6ZBy9ZD" Bounds="579,461" />
+              <ControlPoint Id="QKYsCW1cOkjMq4FnO7fi8s" Bounds="618,431" />
+              <ControlPoint Id="OLpTZg2YnV1PA83YOAbeil" Bounds="533,111" />
+              <ControlPoint Id="BJpoXPMams3Ns6OZf3a6Al" Bounds="514,441" />
+              <Node Bounds="459,140,65,19" Id="CACKRdadcOUMzFBh3ZRJ9D">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                </p:NodeReference>
+                <Pin Id="EiQflAb2U2pOuONPBKee8t" Name="X" Kind="InputPin" />
+                <Pin Id="QNl7yUv9fFQLApcgsg850v" Name="Result" Kind="OutputPin" />
+                <Pin Id="GeE1pP2l96pQIK6MnSN4XP" Name="Not Assigned" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="416,181,30,19" Id="U5k1EWVhDJGLqGPH45EyhI">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="OR" />
+                </p:NodeReference>
+                <Pin Id="HCI9PnOEg8mLlB5Kw577sT" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Jga4v9mv3WSNr0Aw09qWD7" Name="Input 2" Kind="InputPin" />
+                <Pin Id="FgX2cqOzDNSQRnU8KlTnXM" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="485,181,37,19" Id="UBkhVJ9KLpMMdftXMJJNpw">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                </p:NodeReference>
+                <Pin Id="ADcoeoD9CvbLyzSWnaTiTY" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BIGtx9rsqNNQYFSQS2h4Og" Name="Input 2" Kind="InputPin" />
+                <Pin Id="OOQgTCBXmLqO1elmUFvsp2" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="558,151,57,19" Id="FD7tRZ6bw6bNBlYZXafqHs">
+                <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Changed" />
+                </p:NodeReference>
+                <Pin Id="TVbgXlK7BmlP5aq0oZKfeh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="HSJNYFwVUX1M146geXg9Zu" Name="Changed On Create" Kind="InputPin" IsHidden="true" />
+                <Pin Id="FLQ0PNtYja8MdWBTIKZ4wH" Name="Value" Kind="InputPin" />
+                <Pin Id="LdHzLDHlyJqLXRvyUZ4Bo6" Name="Result" Kind="OutputPin" />
+                <Pin Id="IN6mYEpsKSaMztm9fdf2jV" Name="Unchanged" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <Patch Id="N6CG8OCyf93MneXDobnIDg" Name="Create" />
             <Patch Id="G39ylWJtehjMfqDO7BnckL" Name="Update">
               <Pin Id="O2nm1NWwKwELpeNMjbxI8X" Name="Refresh" Kind="InputPin" />
+              <Pin Id="SUkTRcau9gnOaCXpWQ6bV8" Name="Output" Kind="OutputPin" />
               <Pin Id="V5Yd5DdxBbMM9mAT3tLCpO" Name="Success" Kind="OutputPin" />
               <Pin Id="O7D8orjWbXxNcnKtHHkGPB" Name="Error Message" Kind="OutputPin" />
+              <Pin Id="KEAjj5tfRlUN9vDVPlleLt" Name="Input" Kind="InputPin" />
             </Patch>
             <ProcessDefinition Id="OJlzK6fBdZhNMMBdgXqazT">
               <Fragment Id="CXXHU4aNpgxOBBtjzAU3kQ" Patch="N6CG8OCyf93MneXDobnIDg" Enabled="true" />
               <Fragment Id="MVKNzRVbECnNaN1g15hmk4" Patch="G39ylWJtehjMfqDO7BnckL" Enabled="true" />
             </ProcessDefinition>
-            <Link Id="Pyq0VEHUbmQMmMxqQNN9wc" Ids="G3HEUKM1B3gMwzYf0b7Idr,NquaWCqrjl2MLBxxUVAq5c" />
+            <Link Id="Pyq0VEHUbmQMmMxqQNN9wc" Ids="G3HEUKM1B3gMwzYf0b7Idr,HCI9PnOEg8mLlB5Kw577sT" />
             <Link Id="CEgZYDIDhydQD6aUdWJfV3" Ids="O2nm1NWwKwELpeNMjbxI8X,G3HEUKM1B3gMwzYf0b7Idr" IsHidden="true" />
             <Link Id="OjqHedQIvBrLyBaNQ2ZYU7" Ids="PxVSMua3uWaOihjol46bv8,Ol805Ww00KsP6gLX3NvLXu" />
             <Link Id="GwGXHzAijL6O4ytO9XkTXu" Ids="Ol805Ww00KsP6gLX3NvLXu,RquWxfU3Z5yNqEL6ZBy9ZD" />
@@ -1669,6 +1712,18 @@
             <Link Id="QoghEjGCUfCOSrdTUthsLg" Ids="B8xWki5FJEAMv6MKrVbwKL,EamU0BGJIZfLQWXYl5eAcL" />
             <Link Id="EcQgNotRMCQLycOXfVcNCr" Ids="EamU0BGJIZfLQWXYl5eAcL,QKYsCW1cOkjMq4FnO7fi8s" />
             <Link Id="G2Z98ZJAzjSPY0GVkj1E5c" Ids="QKYsCW1cOkjMq4FnO7fi8s,O7D8orjWbXxNcnKtHHkGPB" IsHidden="true" />
+            <Link Id="RYYlc9cgGOnNRvnYSxuQSs" Ids="KEAjj5tfRlUN9vDVPlleLt,OLpTZg2YnV1PA83YOAbeil" IsHidden="true" />
+            <Link Id="KBcrzGZ59hUPXfs8ndFEiQ" Ids="OXTFATpo2hBNKJwBn3Vddu,Gycxug7iH8GP48D7qqxhpN" />
+            <Link Id="SMUkfRjhFmzNCNKa5o1KO1" Ids="Gycxug7iH8GP48D7qqxhpN,SxmWLdjy1wMNOe9OQqwgOh" />
+            <Link Id="UP83Hl0lV6tLAOdiiFum7C" Ids="SxmWLdjy1wMNOe9OQqwgOh,BJpoXPMams3Ns6OZf3a6Al" />
+            <Link Id="NtUl6bfQcX4Le3R2bS5VK3" Ids="BJpoXPMams3Ns6OZf3a6Al,SUkTRcau9gnOaCXpWQ6bV8" IsHidden="true" />
+            <Link Id="PO8qoIKdWqSLH5iJSHhgar" Ids="OLpTZg2YnV1PA83YOAbeil,EiQflAb2U2pOuONPBKee8t" />
+            <Link Id="PyOO8HLOdSROlyLxK2EWTP" Ids="FgX2cqOzDNSQRnU8KlTnXM,NquaWCqrjl2MLBxxUVAq5c" />
+            <Link Id="BRAhQHhOaruNg6LcUUhCuZ" Ids="QNl7yUv9fFQLApcgsg850v,ADcoeoD9CvbLyzSWnaTiTY" />
+            <Link Id="OBWJhhy4lPSPMNfQ8zoEtK" Ids="OLpTZg2YnV1PA83YOAbeil,FLQ0PNtYja8MdWBTIKZ4wH" />
+            <Link Id="LaX3RYW0W7gPx8ZWM4NhIi" Ids="LdHzLDHlyJqLXRvyUZ4Bo6,BIGtx9rsqNNQYFSQS2h4Og" />
+            <Link Id="VHeGEW2HFgRNPWziO9YAUm" Ids="OOQgTCBXmLqO1elmUFvsp2,Jga4v9mv3WSNr0Aw09qWD7" />
+            <Link Id="UlBhV8fJUlcMz1nMsq4Vyj" Ids="OLpTZg2YnV1PA83YOAbeil,FS9vMgCSwzhPBLtlwKNbyW" />
           </Patch>
         </Node>
       </Canvas>
@@ -1696,13 +1751,13 @@
   </Patch>
   <PlatformDependency Id="ATSbBq4ieUHLtIoxHs1Mla" Location="./lib/net8.0/NvAPIWrapper.dll" />
   <PlatformDependency Id="TFZiX9BovjhLFXKLDkHgaJ" Location="./lib/net8.0/VL.Nvidia.NvAPI.dll" />
-  <NugetDependency Id="BBU4MjClGnoOygoNBofeiv" Location="VL.Stride" Version="2025.7.0-0351-gb3f6445d75" />
+  <NugetDependency Id="BBU4MjClGnoOygoNBofeiv" Location="VL.Stride" Version="2025.7.0-0345-gedcbaa0710" />
   <PlatformDependency Id="AdamkbTBt0sLxRY3XTkcN9" Location="mscorlib" />
   <PlatformDependency Id="QvHL5HLrPX7QdBKKJW8g9R" Location="SharpDX.dll" />
   <PlatformDependency Id="QvHL5HLrPX8QdBKKJW8g9R" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="H2f8MXufRYpPuRjIjOK3q4" Location="Stride.Core.Mathematics.dll" />
   <PlatformDependency Id="QvHL5HLrPX9QdBKKJW8g9R" Location="VL.Stride.Runtime.dll" />
   <NugetDependency Id="GxqlRZPwuSmO2TfSXIPH0g" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
-  <NugetDependency Id="H1mep4xNTdINASsv7ITzCp" Location="VL.Core" Version="2025.7.0-0351-gb3f6445d75" />
+  <NugetDependency Id="H1mep4xNTdINASsv7ITzCp" Location="VL.Core" Version="2025.7.0-0345-gedcbaa0710" />
   <PlatformDependency Id="Or9Kox1rahdNoX59lkP9uY" Location="Stride.Games.dll" />
 </Document>
