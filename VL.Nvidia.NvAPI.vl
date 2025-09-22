@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VbQL9BgEZSKMYKJKcV9RGv" LanguageVersion="2025.7.0-0345-gedcbaa0710" Version="0.128">
-  <NugetDependency Id="GWg9BGfhbYqP47Lut7Z7H8" Location="VL.CoreLib" Version="2025.7.0-0345-gedcbaa0710" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VbQL9BgEZSKMYKJKcV9RGv" LanguageVersion="2025.7.0-0384-g212a8f1596" Version="0.128">
+  <NugetDependency Id="GWg9BGfhbYqP47Lut7Z7H8" Location="VL.CoreLib" Version="2025.7.0-0384-g212a8f1596" />
   <Patch Id="Jr58cS8DB9RPIUD978QXlU">
     <Canvas Id="EjuKHqJgiLBOPAb8qzMEGf" DefaultCategory="Nvidia.NvAPI" CanvasType="FullCategory">
       <Canvas Id="Al3LylHWMk7LdbpULFia6V" Name="QuadroSync" Position="144,370">
@@ -396,7 +396,7 @@
                   <Pin Id="B96kOdCsJKWQEjKt8VzZHj" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="SY3bOFJDh1OOKWcx6Dpx71" Name="Apply" Kind="InputPin" />
                 </Node>
-                <Node Bounds="969,329,37,19" Id="VHlwcRbFimoQFAhuj0zbIK">
+                <Node Bounds="969,340,37,19" Id="VHlwcRbFimoQFAhuj0zbIK">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -622,6 +622,19 @@
                 <Pad Id="T0oBRhQ1f07P35jmZjiXw9" Comment="" Bounds="654,1091,118,39" ShowValueBox="true" isIOBox="true" />
                 <Pad Id="Ig6dMbbQuqTQHjv2ZGieRU" Comment="" Bounds="299,1104,118,32" ShowValueBox="true" isIOBox="true" />
                 <Pad Id="B9Pr4YL8cGZNliM43O9O9u" Comment="" Bounds="1183,1079,120,40" ShowValueBox="true" isIOBox="true" />
+                <Node Bounds="1199,311,37,19" Id="KbleIr2zEoaQDhwkd7E32l">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Primitive.Boolean" />
+                    <Choice Kind="OperationCallFlag" Name="AND" />
+                  </p:NodeReference>
+                  <Pin Id="K2oty1buwQNLlEIi379gX3" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FKgTCDsBYSvN6FIEQxeKcC" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="Ary8gsHmkg5PTP1oFXh47U" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <ControlPoint Id="LqvpPPqda42LkrZkDUW8g2" Bounds="654,1170" />
+                <ControlPoint Id="RRUeqVzk2nNQYuqXHmuC3Y" Bounds="1314,1170" />
+                <ControlPoint Id="V3FfcZof8OJOkv3giYr2to" Bounds="1306,300" />
               </Canvas>
               <Patch Id="N4o2CrthREjNMwAp8Js4QK" Name="Create" />
               <Patch Id="FXSZapbTxKdMmyskx7a7Bl" Name="Update">
@@ -682,7 +695,7 @@
               <Link Id="GmIvc7O2laXQDhfvnlGRVP" Ids="SOKs3Ozd7lWMPloqwf7rKa,K0FfVnJXRRtQWrYcBFEwwW" IsHidden="true" />
               <Link Id="KbXGokrW0pHOHe7vo3IqJr" Ids="HN3hRLbs3TgQY7IJqWbCJP,AcEHS7xvOT8PN34O7gPHeg" />
               <Link Id="HIY3nZmyn4uPHTwyuZULBn" Ids="OxPlQQejDD4Pj9NHOkM0HD,RSEKYz8m6drO4T3dZuYT7Y" />
-              <Link Id="RIMjSdDS3aeL2mBuDmFhiM" Ids="TavCQuulNVCPWFyZN97D9p,SVjENPdJAq7OfOU2zJIwBX" />
+              <Link Id="RIMjSdDS3aeL2mBuDmFhiM" Ids="TavCQuulNVCPWFyZN97D9p,K2oty1buwQNLlEIi379gX3" />
               <Link Id="CqQGP02qSjwOK4nDG2CcwX" Ids="SRwNLxt2lWeNshBLgH4y3e,TavCQuulNVCPWFyZN97D9p" />
               <Link Id="VISbFmxHQJGO5fgBuByWpG" Ids="BXYqYgqDFjvOQsOJh17pTe,SRwNLxt2lWeNshBLgH4y3e" IsHidden="true" />
               <Link Id="NPX07HnH3NnM7j5syDCeh8" Ids="Av99DrCnx4tPeIqQlasnvz,QTRExF47IkoNfyZcQ5jYc5" IsHidden="true" />
@@ -690,7 +703,6 @@
               <Link Id="USAzpFJGazDPra3FfblGHk" Ids="Opr9YGQ6KuSOjbnxIYNw2O,LzmL0xDui8UO3RN9YvUlNI" />
               <Link Id="AMeJbvkddt7Ph8k2y3SYE0" Ids="QTRExF47IkoNfyZcQ5jYc5,IU5nJzEIfOANyMUiXkAavX" />
               <Link Id="QqrLe2gS183NG2RdLh1KYp" Ids="KHI5y7yMJgGMYh99mHPEd3,SY3bOFJDh1OOKWcx6Dpx71" />
-              <Link Id="Gf1bPJqU9qLOHcvp8YjoBv" Ids="TavCQuulNVCPWFyZN97D9p,MN2ieaOC3qzNMRRebRaJZF" />
               <Link Id="ElCym0PkzjxLUJZXnsi2WJ" Ids="POGRhcg8j7OQXmdmycHsBW,ISAcv6KMnH0NQUkqdM1wKo" />
               <Link Id="FBzQ6lBqrQVPWsVYMEIhsV" Ids="T5cqI0PSMyZOESxzi7XFUm,QFWDcINYQCBPzXu7KMjiBU" />
               <Link Id="PVzbar3mw0WO57ragOROMn" Ids="QFWDcINYQCBPzXu7KMjiBU,B5fGkHng9PoNN6aNNxRCiA" />
@@ -773,6 +785,9 @@
               <Link Id="GEBoLiErwQ6Ng988OtKjK3" Ids="RFgd12zUFPHPiuiAB0zaFt,Ig6dMbbQuqTQHjv2ZGieRU" />
               <Link Id="TwBe3E0FjWPQdeKA1ge1na" Ids="P7GZO7gTU5hOilIBkJJYGS,Pugg6aOMhMjLbyO1DYgCEO" />
               <Link Id="NnfvZ7UvNIBM6KuXUscwtZ" Ids="Pugg6aOMhMjLbyO1DYgCEO,B9Pr4YL8cGZNliM43O9O9u" />
+              <Link Id="NlETj1M6pxvMgg8UeX8AsN" Ids="Ary8gsHmkg5PTP1oFXh47U,SVjENPdJAq7OfOU2zJIwBX" />
+              <Link Id="LANNxBo5uE7PHWHkaMMbTX" Ids="Ary8gsHmkg5PTP1oFXh47U,MN2ieaOC3qzNMRRebRaJZF" />
+              <Link Id="QGXnikf2xDKMP81j6GOnna" Ids="GyT9GmnmKTKLrHuKJkG1tH,LqvpPPqda42LkrZkDUW8g2,RRUeqVzk2nNQYuqXHmuC3Y,V3FfcZof8OJOkv3giYr2to,FKgTCDsBYSvN6FIEQxeKcC" />
             </Patch>
           </Node>
         </Canvas>
@@ -1921,13 +1936,13 @@
   </Patch>
   <PlatformDependency Id="ATSbBq4ieUHLtIoxHs1Mla" Location="./lib/net8.0/NvAPIWrapper.dll" />
   <PlatformDependency Id="TFZiX9BovjhLFXKLDkHgaJ" Location="./lib/net8.0/VL.Nvidia.NvAPI.dll" />
-  <NugetDependency Id="BBU4MjClGnoOygoNBofeiv" Location="VL.Stride" Version="2025.7.0-0345-gedcbaa0710" />
+  <NugetDependency Id="BBU4MjClGnoOygoNBofeiv" Location="VL.Stride" Version="2025.7.0-0384-g212a8f1596" />
   <PlatformDependency Id="AdamkbTBt0sLxRY3XTkcN9" Location="mscorlib" />
   <PlatformDependency Id="QvHL5HLrPX7QdBKKJW8g9R" Location="SharpDX.dll" />
   <PlatformDependency Id="QvHL5HLrPX8QdBKKJW8g9R" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="H2f8MXufRYpPuRjIjOK3q4" Location="Stride.Core.Mathematics.dll" />
   <PlatformDependency Id="QvHL5HLrPX9QdBKKJW8g9R" Location="VL.Stride.Runtime.dll" />
   <NugetDependency Id="GxqlRZPwuSmO2TfSXIPH0g" Location="VL.Nvidia.NvAPI" Version="0.0.0" />
-  <NugetDependency Id="H1mep4xNTdINASsv7ITzCp" Location="VL.Core" Version="2025.7.0-0345-gedcbaa0710" />
+  <NugetDependency Id="H1mep4xNTdINASsv7ITzCp" Location="VL.Core" Version="2025.7.0-0384-g212a8f1596" />
   <PlatformDependency Id="Or9Kox1rahdNoX59lkP9uY" Location="Stride.Games.dll" />
 </Document>
